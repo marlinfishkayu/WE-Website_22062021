@@ -1548,6 +1548,7 @@ button:focus {
 }
 
 .sidebar .game-show, .livegame-show {
+  text-transform: uppercase;
   height: 0;
   overflow: hidden;
   -webkit-transition: height .5s;
@@ -1558,7 +1559,6 @@ button:focus {
 
 .sidebar .game-show.show, .livegame-show.show {
   height: 280px;
-  text-transform: uppercase;
 }
 
 #pills-tabContent .fade:not(.show) {

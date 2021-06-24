@@ -621,6 +621,7 @@
 	right: 0;
 }
 .sidebar .game-show, .livegame-show{
+	text-transform: uppercase;
 	height: 0;
 	overflow: hidden;
 	-moz-transition: height .5s;
@@ -633,7 +634,7 @@
 }
 .sidebar .game-show.show, .livegame-show.show{
 	height: 280px;
-	text-transform: uppercase;
+	
 }
 #pills-tabContent .fade:not(.show){
 	display: none;
