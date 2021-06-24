@@ -1565,10 +1565,6 @@ button:focus {
   overflow-x: hidden;
 }
 
-.sidebar .game-item {
-  margin-top: -1rem;
-}
-
 .sidebar .clickable {
   padding-top: 3px;
   width: 100%;

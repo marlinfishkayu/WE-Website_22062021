@@ -40,6 +40,7 @@ var arrLang = {
       'GodofFortune': 'God of Fortune',
       'Lotto5': 'Lotto 5',
       'PK10': 'PK10 Racing',
+      //
       'GodofFortuneSicBo_1':'God of Fortune',
       'GodofFortuneSicBo_2':'Sic Bo',
       'GodofFortuneRoulette_1':'God of Fortune',
@@ -179,6 +180,7 @@ var arrLang = {
       'GodofFortune': '財神',
       'Lotto5': '時時彩',
       'PK10': '北京賽車',
+      //
       'GodofFortuneSicBo_1':'財神骰寶',
       'GodofFortuneSicBo_2':'',
       'GodofFortuneRoulette_1':'財神輪盤',
@@ -320,6 +322,7 @@ var arrLang = {
       'GodofFortune': '财神',
       'Lotto5': '时时彩',
       'PK10': '北京赛车',
+      //
       'GodofFortuneSicBo_1':'财神骰宝',
       'GodofFortuneSicBo_2':'',
       'GodofFortuneRoulette_1':'财神轮盘',

@@ -248,75 +248,334 @@
                     <!-- side menu start  -->
                     <nav class="sidebar">
                         <a class="navbar-brand menu-item menu-logo" href="index.html" id="logoMobile">
-                            <div class="nav-logo"><img loading="lazy" class="imageset" data-key="WE_logo" src="./images/icon/en/logo.svg" alt="" loading="lazy" /></div>
+                            <div class="nav-logo"><img loading="lazy"class="imageset" data-key="WE_logo" src="./images/icon/en/logo.svg" alt="" loading="lazy" /></div>
                         </a>
                         <div class="menu-wrapper menu-item" id="menuMobile">
                             <div class="menu-btn">
                                 <div class="menu-btn__burger"></div>
                             </div>
                         </div>
-                        <ul>
+                        <ul class="side-wrap">
                             <li class="side-item">
-                                <a href="AboutWE.html" class="lang" key="nav_About">About WE</a>
+                                <div class="clickable">
+                                    <a href="AboutWE.html" class="lang stretched-link" key="nav_About">About WE</a>
+                                </div>
                             </li>
                             <li class="side-item">
-                                <a href="#" class="game-btn">
-                                    <span class="lang" key="nav_LiveGames">Games</span>
-                                    <span class="fa-arrow">
-                                        <img loading="lazy" src="./images/icon/dropdown.svg" />
-                                    </span>
-                                </a>
+                                <div class="clickable" style="transform: rotate(0);">
+                                    <a href="#" class="game-btn stretched-link">
+                                        <span class="lang" key="nav_LiveGames">Games</span>
+                                        <span class="fa-arrow">
+                                            <img loading="lazy" src="./images/icon/dropdown.svg" />
+                                        </span>
+                                    </a>
+                                </div>
                                 <ul class="game-show">
                                     <li class="game-item">
-                                        <a href="#" class="livegame-btn">
-                                            <span class="lang" key="submenu_LiveGames">LIVE GAMES</span>
-                                            <span class="fa-arrow">
-                                                <img loading="lazy" src="./images/icon/dropdown.svg" />
-                                            </span>
-                                        </a>
-                                        <ul class="game-sub-item livegame-show">
-                                            <a href="All_Live_Game.html"><li class="lang" key="submenu_AllLiveGame">ALL LIVE GAMES</li></a>
-                                            <a href="Game_LiveGame_Baccarat.html"><li><span class="lang" key="Baccarat">BACCARAT</span></li></a>
-                                            <a href="Game_LiveGame_SqueezeBaccarat.html"><li><span class="lang" key="SqueezeBaccarat">Squeeze Baccarat</span></li></a>
-                                            <a href="Game_LiveGame_GodofFortuneSicBo.html"><li><span class="lang" key="GodofFortuneSicBo">God of Fortune Sic Bo</span></li></a>
-                                            <a href="Game_LiveGame_GodofFortuneRoulette.html"><li><span class="lang" key="GodofFortuneRoulette">God of Fortune Roulette</span></li></a>
-                                            <a href="Game_LiveGame_MahjongLuckyWheel.html"><li><span class="lang" key="MahjongLuckyWheel">MAHJONG LUCKY WHEEL</span></li></a>
-                                            <a href="Game_LiveGame_SicBo.html"><li><span class="lang" key="SicBo">SIC BO</span></li></a>
-                                            <a href="Game_LiveGame_Roulette.html"><li><span class="lang" key="Roulette">ROULETTE</span></li></a>
-                                            <a href="Game_LiveGame_DragonTiger.html"><li><span class="lang" key="DragonTiger">DRAGON TIGER</span></li></a>
-                                            <a href="Game_LiveGame_WinThreeCards.html"><li><span class="lang" key="WinThreeCards">Win Three Cards</span></li></a>
-                                            <a href="Game_LiveGame_Blockchain_Baccarat.html"><li><span class="lang" key="BlockchainBaccarat">Blockchain Baccarat</span></li></a>
-                                            <a href="Game_LiveGame_Blockchain_SqueezeBaccarat.html"><li><span class="lang" key="BlockchainSqueezeBaccarat">Blockchain Squeeze Baccarat</span></li></a>
-                                            <a href="Game_LiveGame_Blockchain_SpeedBaccarat.html"><li><span class="lang" key="BlockchainSpeedBaccarat">Blockchain Speed Baccarat</span></li></a>
-                                            <a href="Game_LiveGame_Blockchain_DragonTiger.html"><li><span class="lang" key="BlockchainDragonTiger">Blockchain Dragon Tiger</span></li></a>
-                                        </ul>
-                                    </li>
-                                     <li class="game-item">
-                                        <a href="#" class="livegame-btn">
-                                            <span class="lang" key="submenu_Lottery">LOTTERIES</span>
-                                            <span class="fa-arrow">
-                                                <img loading="lazy" src="./images/icon/dropdown.svg" />
-                                            </span>
-                                        </a>
-                                        <ul class="game-sub-item livegame-show">
-                                            <a href="All_Lottery_Game.html"><li><span class="lang" key="submenu_AllLotteryGame">ALL LOTTERIES</span></li></a>
-                                            <a href="Game_Lottery_Lotto5.html"><li><span class="lang" key="Lotto5">Lotto 5</span></li></a>
-                                            <a href="Game_Lottery_PK10.html"><li><span class="lang" key="PK10">PK10 Racing</span></li></a>
-                                        </ul>
+                                        <div class="tab-menu">
+                                            <div class="labels">
+                                                <div class="inner-container">
+                                                    <span class="" tabindex="0">
+                                                        <label class="tab-label lang show" for="tab-tab1" key="submenu_LiveGames"></label>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <label class="tab-label lang" for="tab-tab2-0" key="submenu_Lottery"></label>
+                                                    </span>
+                                                    <!-- <span tabindex="0">
+                                                        <a href="#"><label class="tab-label lang" key="submenu_Sportsbook"></label></a>
+                                                    </span>
+                                                    <span tabindex="0">
+                                                        <a href="#"><label class="tab-label lang" key="submenu_Slots"></label></a>
+                                                    </span> -->
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="tabs">
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab1" name="tabs-main" checked>
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content">
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Baccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Bac_x1.png"
+                                                                            srcset="./images/menu/m-Bac_x1.png 500w, ./images/menu/m-Bac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Baccarat"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_SqueezeBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-SqBac_x1.png"
+                                                                            srcset="./images/menu/m-SqBac_x1.png 500w, ./images/menu/m-SqBac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="SqueezeBaccarat"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_GodofFortuneSicBo.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-GOF-SicBo_x1.png"
+                                                                            srcset="./images/menu/m-GOF-SicBo_x1.png 500w, ./images/menu/m-GOF-SicBo_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="GodofFortuneSicBo_1"></h4>
+                                                                            <h4 class="lang" key="GodofFortuneSicBo_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_GodofFortuneRoulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-GOF-Roulette_x1.png"
+                                                                            srcset="./images/menu/m-GOF-Roulette_x1.png 500w, ./images/menu/m-GOF-Roulette_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="GodofFortuneRoulette_1"></h4>
+                                                                            <h4 class="lang" key="GodofFortuneRoulette_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_MahjongLuckyWheel.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-MahjongLuckyWheel_x1.png"
+                                                                            srcset="./images/menu/m-MahjongLuckyWheel_x1.png 500w, ./images/menu/m-MahjongLuckyWheel_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="MahjongLuckyWheel_1"></h4>
+                                                                            <h4 class="lang" key="MahjongLuckyWheel_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_SicBo.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-SicBo_x1.png"
+                                                                            srcset="./images/menu/m-SicBo_x1.png 500w, ./images/menu/m-SicBo_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="SicBo"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Roulette.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Roulette_x1.png"
+                                                                            srcset="./images/menu/m-Roulette_x1.png 500w, ./images/menu/m-Roulette_x1.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Roulette"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_DragonTiger.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-DragonTiger_x1.png"
+                                                                            srcset="./images/menu/m-DragonTiger_x1.png 500w, ./images/menu/m-DragonTiger_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="DragonTiger"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_WinThreeCards.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-WinThreeCards_x1.png"
+                                                                            srcset="./images/menu/m-WinThreeCards_x1.png 500w, ./images/menu/m-WinThreeCards_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="WinThreeCards"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Blockchain_Baccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-Bac_x1.png"
+                                                                            srcset="./images/menu/m-BC-Bac_x1.png 500w, ./images/menu/m-BC-Bac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Blockchain_SqueezeBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SqBac_x1.png"
+                                                                            srcset="./images/menu/m-BC-SqBac_x1.png 500w, ./images/menu/m-BC-SqBac_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainSqueezeBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainSqueezeBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Blockchain_SpeedBaccarat.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-SpBac_x1.png"
+                                                                            srcset="./images/menu/m-BC-SpBac_x1.png 500w, ./images/menu/m-BC-SpBac_x1.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainSpeedBaccarat_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainSpeedBaccarat_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_LiveGame_Blockchain_DragonTiger.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-BC-DraTig_x1.png"
+                                                                            srcset="./images/menu/m-BC-DraTig_x1.png 500w, ./images/menu/m-BC-DraTig_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="BlockchainDragonTiger_1"></h4>
+                                                                            <h4 class="lang" key="BlockchainDragonTiger_2"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Live_Game.html">
+                                                                        <img class="imageset" data-key="AllLiveGameBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-0" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <ul class="tab-content">
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_Lottery_Lotto5.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-Lotto5_x1.png"
+                                                                            srcset="./images/menu/m-Lotto5_x1.png 500w, ./images/menu/m-Lotto5_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div  class="game-box-h4">
+                                                                            <h4 class="lang" key="Lotto5"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box">
+                                                                <div  class="game-box-img">
+                                                                    <a href="Game_Lottery_PK10.html">
+                                                                        <img loading="lazy" class="game-box-img-inner"
+                                                                            src="./images/menu/m-PK10_x1.png"
+                                                                            srcset="./images/menu/m-PK10_x1.png 500w, ./images/menu/m-PK10_x2.png 1000w"
+                                                                            alt=""
+                                                                            />
+                                                                        <div class="game-box-h4">
+                                                                            <h4 class="lang" key="PK10"></h4>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li class="game-box viewAllParent">
+                                                                <div class="game-box-img">
+                                                                    <a href="All_Lottery_Game.html">
+                                                                        <img class="imageset" data-key="AllLotteriesBtn" src=""/>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-1" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <div class="tab-content">
+                                                            <h2>Tab 3</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab">
+                                                    <input class="tab-radio" type="radio" id="tab-tab2-2" name="tabs-main">
+                                                    <div class="tab-panel">
+                                                        <div class="tab-content">
+                                                            <h2>Tab 4</h2>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
                             <li class="side-item">
-                                <a href="LiveStudio.html"><span class="lang" key="nav_LiveStudio">Live Studio</span></a>
+                                <div class="clickable">
+                                    <a href="LiveStudio.html" class="stretched-link"><span class="lang" key="nav_LiveStudio">Live Studio</span></a>
+                                </div>
                             </li>
                             <li class="side-item">
-                                <a href="Services.html"><span class="lang" key="nav_Services">Services</span></a>
+                                <div class="clickable">
+                                    <a class="stretched-link" href="Services.html"><span class="lang" key="nav_Services">Services</span></a>
+                                </div>
                             </li>
                             <li class="side-item">
-                                <a href="WhatsNew.html"><span class="lang" key="nav_WhatsNew">What’s New</span></a>
+                                <div class="clickable">
+                                    <a class="stretched-link" href="WhatsNew.html"><span class="lang" key="nav_WhatsNew">What’s New</span></a>
+                                </div>
                             </li>
                             <li class="side-item">
-                                <a href="ContactUs.html"><span class="lang" key="nav_ContactUs">Contact Us</span></a>
+                                <div class="clickable">
+                                    <a class="stretched-link" href="ContactUs.html"><span class="lang" key="nav_ContactUs">Contact Us</span></a>
+                                </div>
                             </li>
                         </ul>
                     </nav>
