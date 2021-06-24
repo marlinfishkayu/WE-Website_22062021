@@ -632,7 +632,7 @@
 }
 
 // new menu game tab
-.game-item{
+.sidebar{
 	.side-wrap {
 		overflow-y: scroll;
 		overflow-x: hidden;
@@ -642,7 +642,7 @@
 		margin-top: -1rem;
 	}
 	
-	.rotate {
+	.clickable {
 		padding-top: 3px;
 		width: 100%;
 		height: 70px;
@@ -788,9 +788,6 @@
 	
 	.inner-container .show {
 		color: #FFFFFF;
-	}
-	#clickable-game {
-		transform: rotate(0);
 	}
 }
 

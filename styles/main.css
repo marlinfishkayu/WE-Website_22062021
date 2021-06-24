@@ -1560,42 +1560,42 @@ button:focus {
   display: none;
 }
 
-.game-item .side-wrap {
+.sidebar .side-wrap {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.game-item .game-item {
+.sidebar .game-item {
   margin-top: -1rem;
 }
 
-.game-item .rotate {
+.sidebar .clickable {
   padding-top: 3px;
   width: 100%;
   height: 70px;
 }
 
-.game-item .tab-radio {
+.sidebar .tab-radio {
   display: none;
 }
 
-.game-item .tabs {
+.sidebar .tabs {
   font-size: 0;
   margin: 0;
 }
 
-.game-item .labels {
+.sidebar .labels {
   white-space: nowrap;
   min-width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-.game-item .inner-container {
+.sidebar .inner-container {
   width: 500px;
 }
 
-.game-item .labels .tab-label {
+.sidebar .labels .tab-label {
   cursor: pointer;
   display: inline-block;
   font-family: Futura-pt, Arial, sans-serif;
@@ -1613,12 +1613,12 @@ button:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.game-item .inner-container > span {
+.sidebar .inner-container > span {
   display: inline;
   position: relative;
 }
 
-.game-item .inner-container > span::after {
+.sidebar .inner-container > span::after {
   content: ' / ';
   color: #FFFFFF4D;
   position: absolute;
@@ -1626,11 +1626,11 @@ button:focus {
   right: 8px;
 }
 
-.game-item .inner-container > span:last-child::after {
+.sidebar .inner-container > span:last-child::after {
   content: '';
 }
 
-.game-item .tabs .tab-panel {
+.sidebar .tabs .tab-panel {
   position: fixed;
   display: inline-block;
   overflow: hidden;
@@ -1639,7 +1639,7 @@ button:focus {
   width: 0;
 }
 
-.game-item ul.tab-content {
+.sidebar ul.tab-content {
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -1647,18 +1647,18 @@ button:focus {
   padding: 0;
 }
 
-.game-item ul.tab-content li {
+.sidebar ul.tab-content li {
   display: inline-block;
 }
 
-.game-item .game-box {
+.sidebar .game-box {
   width: 123px;
   height: 241px;
   margin-right: 10px;
   margin-top: 20px;
 }
 
-.game-item .game-box-title {
+.sidebar .game-box-title {
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -1668,11 +1668,11 @@ button:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.game-item .game-box-img {
+.sidebar .game-box-img {
   position: relative;
 }
 
-.game-item .game-box-img-inner {
+.sidebar .game-box-img-inner {
   width: 123px;
   height: 171px;
   -o-object-fit: cover;
@@ -1681,13 +1681,13 @@ button:focus {
   border: 0.5px solid #b0936da3;
 }
 
-.game-item .game-box-h4 {
+.sidebar .game-box-h4 {
   width: 123px;
   margin-top: -0.3rem;
   position: absolute;
 }
 
-.game-item .game-box-h4 h4 {
+.sidebar .game-box-h4 h4 {
   text-transform: uppercase;
   font-family: "Futura-Medium", Futura-pt, Arial, sans-serif;
   font-style: normal;
@@ -1699,11 +1699,11 @@ button:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.game-item span:focus {
+.sidebar span:focus {
   outline: none;
 }
 
-.game-item .viewAllParent {
+.sidebar .viewAllParent {
   background-repeat: no-repeat;
   margin-left: 10px;
   position: absolute;
@@ -1711,17 +1711,12 @@ button:focus {
   cursor: pointer;
 }
 
-.game-item .tabs .tab [type="radio"]:checked ~ .tab-panel {
+.sidebar .tabs .tab [type="radio"]:checked ~ .tab-panel {
   display: inline;
 }
 
-.game-item .inner-container .show {
+.sidebar .inner-container .show {
   color: #FFFFFF;
-}
-
-.game-item #clickable-game {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
 }
 
 /* Hide scrollbar */
