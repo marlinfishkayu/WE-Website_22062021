@@ -621,10 +621,18 @@
 	right: 0;
 }
 .sidebar .game-show, .livegame-show{
-	display: none;
+	height: 0;
+	overflow: hidden;
+	-moz-transition: height .5s;
+	-ms-transition: height .5s;
+	-o-transition: height .5s;
+	-webkit-transition: height .5s;
+	transition: height .5s;
+  	transition: height 600ms cubic-bezier(.43,.13,.22,.96);
+	
 }
 .sidebar .game-show.show, .livegame-show.show{
-	display: block;
+	height: 280px;
 	text-transform: uppercase;
 }
 #pills-tabContent .fade:not(.show){
