@@ -1585,6 +1585,39 @@ button:focus {
   margin: 0;
 }
 
+.sidebar .tab {
+  position: relative;
+  z-index: 0;
+}
+
+.sidebar .Scrolling-left::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: 30px;
+  height: 100%;
+  background: #000a16;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 10, 22, 0)), to(#000a16));
+  background: linear-gradient(90deg, rgba(0, 10, 22, 0) 0%, #000a16 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000a16",endColorstr="#000a16",GradientType=1);
+  z-index: 1;
+}
+
+.sidebar .Scrolling-right::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 30px;
+  height: 100%;
+  background: #000a16;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 10, 22, 0)), to(#000a16));
+  background: linear-gradient(270deg, rgba(0, 10, 22, 0) 0%, #000a16 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000a16",endColorstr="#000a16",GradientType=1);
+  z-index: 1;
+}
+
 .sidebar .labels {
   white-space: nowrap;
   min-width: 100%;
@@ -1599,7 +1632,7 @@ button:focus {
 .sidebar .labels .tab-label {
   cursor: pointer;
   display: inline-block;
-  font-family: Futura-pt, Arial, sans-serif;
+  font-family: "Futura-Medium", Futura-pt, Arial, sans-serif;
   font-style: normal;
   margin: 0;
   font-weight: 500;
