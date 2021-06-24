@@ -236,13 +236,25 @@ var arrImg = {
   'EN': [{
       //WE Logo
       'WE_logo': 'images/icon/en/logo.svg',
+      //all live game
+      'AllLiveGameBtn':'./images/menu/allBtn/en/all_live_games_btn.svg',
+      //all lotteries
+      'AllLotteriesBtn':'./images/menu/allBtn/en/all_lotteries_btn.svg',
     }],
   'TC': [{
       //WE Logo
       'WE_logo': 'images/icon/tc/logo.svg',
+      //all live game
+      'AllLiveGameBtn':'./images/menu/allBtn/tc/allgames.svg',
+      //all lotteries
+      'AllLotteriesBtn':'./images/menu/allBtn/tc/allgames.svg',
     }],
   'SC': [{
       //WE Logo
       'WE_logo': 'images/icon/sc/logo.svg',
+      //all live game
+      'AllLiveGameBtn':'./images/menu/allBtn/sc/allgames.svg',
+      //all lotteries
+      'AllLotteriesBtn':'./images/menu/allBtn/sc/allgames.svg',
     }]
 };

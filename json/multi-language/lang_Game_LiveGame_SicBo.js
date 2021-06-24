@@ -40,6 +40,22 @@ var arrLang = {
       'GodofFortune': 'God of Fortune',
       'Lotto5': 'Lotto 5',
       'PK10': 'PK10 Racing',
+      //
+      'GodofFortuneSicBo_1':'God of Fortune',
+      'GodofFortuneSicBo_2':'Sic Bo',
+      'GodofFortuneRoulette_1':'God of Fortune',
+      'GodofFortuneRoulette_2':'Roulette',
+      'MahjongLuckyWheel_1': 'Mahjong',
+      'MahjongLuckyWheel_2': 'Lucky Wheel',
+      'BlockchainBaccarat_1': 'Blockchain',
+      'BlockchainBaccarat_2': 'Baccarat',
+      'BlockchainSqueezeBaccarat_1': 'Blockchain',
+      'BlockchainSqueezeBaccarat_2': 'Squeeze Baccarat',
+      'BlockchainSpeedBaccarat_1': 'Blockchain',
+      'BlockchainSpeedBaccarat_2': 'Speed Baccarat',
+      'BlockchainDragonTiger_1': 'Blockchain',
+      'BlockchainDragonTiger_2': 'Dragon Tiger',
+
       //Game Slogan
       'Baccarat_slogan': 'WE play beyond classic.',
       'Roulette_slogan': 'Ultimate European classic.',
@@ -135,6 +151,22 @@ var arrLang = {
       'GodofFortune': '財神',
       'Lotto5': '時時彩',
       'PK10': '北京賽車',
+      //
+      'GodofFortuneSicBo_1':'財神骰寶',
+      'GodofFortuneSicBo_2':'',
+      'GodofFortuneRoulette_1':'財神輪盤',
+      'GodofFortuneRoulette_2':'',
+      'MahjongLuckyWheel_1': '麻將幸運輪',
+      'MahjongLuckyWheel_2': '',
+      'BlockchainBaccarat_1': '區塊鏈百家樂',
+      'BlockchainBaccarat_2': '',
+      'BlockchainSqueezeBaccarat_1': '區塊鏈共咪百家樂',
+      'BlockchainSqueezeBaccarat_2': '',
+      'BlockchainSpeedBaccarat_1': '區塊鏈極速百家樂',
+      'BlockchainSpeedBaccarat_2': '',
+      'BlockchainDragonTiger_1': '區塊鏈龍虎',
+      'BlockchainDragonTiger_2': '',
+
       //Game Slogan
       'Baccarat_slogan': '保留經典，再創高峰！',
       'Roulette_slogan': '歐洲輪盤之巔。',
@@ -230,6 +262,22 @@ var arrLang = {
       'GodofFortune': '财神',
       'Lotto5': '时时彩',
       'PK10': '北京赛车',
+      //
+      'GodofFortuneSicBo_1':'财神骰宝',
+      'GodofFortuneSicBo_2':'',
+      'GodofFortuneRoulette_1':'财神轮盘',
+      'GodofFortuneRoulette_2':'',
+      'MahjongLuckyWheel_1': '麻将幸运轮',
+      'MahjongLuckyWheel_2': '',
+      'BlockchainBaccarat_1': '区块链百家乐',
+      'BlockchainBaccarat_2': '',
+      'BlockchainSqueezeBaccarat_1': '区块链共咪百家乐',
+      'BlockchainSqueezeBaccarat_2': '',
+      'BlockchainSpeedBaccarat_1': '区块链极速百家乐',
+      'BlockchainSpeedBaccarat_2': '',
+      'BlockchainDragonTiger_1': '区块链龙虎',
+      'BlockchainDragonTiger_2': '',
+
       //Game Slogan
       'Baccarat_slogan': '保留经典，再创高峰！',
       'Roulette_slogan': '欧洲轮盘之巅。',
@@ -288,6 +336,10 @@ var arrImg = {
   'EN': [{
       //WE Logo
       'WE_logo': 'images/icon/en/logo.svg',
+      //all live game
+      'AllLiveGameBtn':'./images/menu/allBtn/en/all_live_games_btn.svg',
+      //all lotteries
+      'AllLotteriesBtn':'./images/menu/allBtn/en/all_lotteries_btn.svg',
       //UI
       'UI': './images/game/game_sicbo/en/game_UI_SicBo_x1.png 1x,images/game/game_sicbo/en/game_UI_SicBo_x2.png 2x',
       //Feature
@@ -298,6 +350,10 @@ var arrImg = {
   'TC': [{
       //WE Logo
       'WE_logo': 'images/icon/tc/logo.svg',
+      //all live game
+      'AllLiveGameBtn':'./images/menu/allBtn/tc/allgames.svg',
+      //all lotteries
+      'AllLotteriesBtn':'./images/menu/allBtn/tc/allgames.svg',
       //UI
       'UI': 'images/game/game_sicbo/tc/game_UI_SicBo_x1.png 1x ,images/game/game_sicbo/tc/game_UI_SicBo_x2.png 2x',
       //'UI': 'images/game/game_sicbo/tc/game_UI_SicBo_x1.png 500w,images/game/game_sicbo/tc/game_UI_SicBo_x2.png 1000w',
@@ -309,6 +365,10 @@ var arrImg = {
   'SC': [{
       //WE Logo
       'WE_logo': 'images/icon/sc/logo.svg',
+      //all live game
+      'AllLiveGameBtn':'./images/menu/allBtn/sc/allgames.svg',
+      //all lotteries
+      'AllLotteriesBtn':'./images/menu/allBtn/sc/allgames.svg',
       //UI
       'UI': 'images/game/game_sicbo/sc/game_UI_SicBo_x1.png 1x ,images/game/game_sicbo/sc/game_UI_SicBo_x2.png 2x',
       //'UI': 'images/game/game_sicbo/sc/game_UI_SicBo_x1.png 500w,images/game/game_sicbo/sc/game_UI_SicBo_x2.png 1000w',
