@@ -160,7 +160,6 @@ container1.scroll(function(e){
     var curVal = container1.scrollLeft();
     if (!isScrolling) {
         $(window).one("mouseup", function(e){
-            console.log("Stopped scrolling at", container1.scrollLeft());
             isScrolling = false;
         });
     }    
@@ -177,27 +176,26 @@ container1.scroll(function(e){
     initVal = curVal;
     isScrolling = true;
 });
-container2.scroll(function(e){
-    var curVal = container2.scrollLeft();
-    if (!isScrolling) {
-        $(window).one("mouseup", function(e){
-            console.log("Stopped scrolling at", container2.scrollLeft());
-            isScrolling = false;
-        });
-    }    
-    if (curVal === initVal) return;
-    if (curVal > initVal) {
-        tabsDirection.removeClass("Scrolling-left");
-        tabsDirection.addClass("Scrolling-right");
+// container2.scroll(function(e){
+//     var curVal = container2.scrollLeft();
+//     if (!isScrolling) {
+//         $(window).one("mouseup", function(e){
+//             isScrolling = false;
+//         });
+//     }    
+//     if (curVal === initVal) return;
+//     if (curVal > initVal) {
+//         tabsDirection.removeClass("Scrolling-left");
+//         tabsDirection.addClass("Scrolling-right");
         
-    } else {
-        tabsDirection.removeClass("Scrolling-right");
-        tabsDirection.addClass("Scrolling-left");
+//     } else {
+//         tabsDirection.removeClass("Scrolling-right");
+//         tabsDirection.addClass("Scrolling-left");
         
-    }
-    initVal = curVal;
-    isScrolling = true;
-});
+//     }
+//     initVal = curVal;
+//     isScrolling = true;
+// });
 
 
 
