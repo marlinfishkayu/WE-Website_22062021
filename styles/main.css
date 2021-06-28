@@ -1118,7 +1118,7 @@ button:focus {
   position: absolute;
   z-index: 3;
   top: 8%;
-  right: 10%;
+  right: 18%;
 }
 
 .nav-icon-wrapper,
@@ -1469,7 +1469,7 @@ button:focus {
 
 .sidebar .side-item a {
   font-family: "Barlow Regular", sans-serif, Arial, Helvetica;
-  font-size: 16px;
+  font-size: 22px;
   letter-spacing: 2px;
   line-height: 60px;
   color: #D8D8D8;

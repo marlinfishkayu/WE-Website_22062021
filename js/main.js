@@ -2,6 +2,7 @@
     $(".menu-btn").on("click", function() {
         $(".menu-btn").toggleClass("open");
         $(".sidebar").toggleClass("open");
+        $(".game-show").removeClass("show");
     });
 })();
 
