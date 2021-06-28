@@ -124,16 +124,10 @@ $(".language-tap").mouseleave(function() {
     $(this).removeClass("active");
 });
 
-/*-- hover display language menu --*/
-$(".tab-label").click(function() {
-    $(".tab-label").removeClass("show");
-    $(this).toggleClass("show");
-});
 
 /*-- mobile side game menu add active --*/
 $(".icon-lang").click(function() {
     $(".lang-dropdown").toggleClass("show");
-    $(".game-show").addClass("show");
     $(".nav-wrap").toggleClass("pointer");
     $(".nav-wrap").addClass("lang_hold");
     return false;
