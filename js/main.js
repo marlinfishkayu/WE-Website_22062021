@@ -157,6 +157,8 @@ container1.scroll(function(e){
         $(window).one("mouseup", function(e){
             isScrolling = false;
         });
+        tabsDirection.removeClass("Scrolling-left");
+        tabsDirection.removeClass("Scrolling-right");
     }    
     if (curVal === initVal) return;
     if (curVal > initVal) {
