@@ -147,7 +147,7 @@ $(".icon-lang").click(function(event) {
 /*-- mobile side menu on scroll display gradient --*/
 
 var container1 = $('#tabContent1');
-var container2 = $('#tabContent2');
+// var container2 = $('#tabContent2');
 var tabsDirection = $('#tabsDirection');
 var initVal = container1.scrollLeft();
 var isScrolling = false;
@@ -171,6 +171,29 @@ container1.scroll(function(e){
     initVal = curVal;
     isScrolling = true;
 });
+
+
+// container2.scroll(function(e){
+//     var curVal = container2.scrollLeft();
+//     if (!isScrolling) {
+//         $(window).one("mouseup", function(e){
+//             isScrolling = false;
+//         });
+//     }    
+//     if (curVal === initVal) return;
+//     if (curVal > initVal) {
+//         tabsDirection.removeClass("Scrolling-left");
+//         tabsDirection.addClass("Scrolling-right");
+        
+//     } else {
+//         tabsDirection.removeClass("Scrolling-right");
+//         tabsDirection.addClass("Scrolling-left");
+        
+//     }
+//     initVal = curVal;
+//     isScrolling = true;
+// });
+
 
 
 /*-- hover index our games diamond --*/
