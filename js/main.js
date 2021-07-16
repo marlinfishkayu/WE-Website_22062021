@@ -43,11 +43,13 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
         $(".nav-item").removeClass("show").addClass("hidden");
+        $(".menu-btn").removeClass("show").addClass("hidden");
         $(".nav-wrap").removeClass("nav-fixed");
     } else {
         // Scroll Up
         if (st + $(window).height() < $(document).height()) {
             $(".nav-item").removeClass("hidden").addClass("show");
+            $(".menu-btn").removeClass("hidden").addClass("show");
             $(".nav-wrap").addClass("nav-fixed");
         }
     }
@@ -113,6 +115,11 @@ $(".livegame-btn").click(function() {
     $(this).closest(".game-item").children(".livegame-btn").toggleClass("rotate");
 });
 
+/*-- side menu live games/ lotteries --*/
+$(".tab-label").click(function() {
+    $(".tab-label").toggleClass("show");
+});
+
 /*-- hover language menu arrow icon --*/
 
 $(".language-tap").mouseover(function() {
@@ -146,31 +153,31 @@ $(".icon-lang").click(function(event) {
 
 /*-- mobile side menu on scroll display gradient --*/
 
-var container1 = $('#tabContent1');
-// var container2 = $('#tabContent2');
-var tabsDirection = $('#tabsDirection');
-var initVal = container1.scrollLeft();
-var isScrolling = false;
-container1.scroll(function(e){
-    var curVal = container1.scrollLeft();
-    if (!isScrolling) {
-        $(window).one("mouseup", function(e){
-            isScrolling = false;
-        });
-    }    
-    if (curVal === initVal) return;
-    if (curVal > initVal) {
-        tabsDirection.removeClass("Scrolling-left");
-        tabsDirection.addClass("Scrolling-right");
+// var container1 = $('#tabContent1');
+// // var container2 = $('#tabContent2');
+// var tabsDirection = $('#tabsDirection');
+// var initVal = container1.scrollLeft();
+// var isScrolling = false;
+// container1.scroll(function(e){
+//     var curVal = container1.scrollLeft();
+//     if (!isScrolling) {
+//         $(window).one("mouseup", function(e){
+//             isScrolling = false;
+//         });
+//     }    
+//     if (curVal === initVal) return;
+//     if (curVal > initVal) {
+//         tabsDirection.removeClass("Scrolling-left");
+//         tabsDirection.addClass("Scrolling-right");
         
-    } else {
-        tabsDirection.removeClass("Scrolling-right");
-        tabsDirection.addClass("Scrolling-left");
+//     } else {
+//         tabsDirection.removeClass("Scrolling-right");
+//         tabsDirection.addClass("Scrolling-left");
         
-    }
-    initVal = curVal;
-    isScrolling = true;
-});
+//     }
+//     initVal = curVal;
+//     isScrolling = true;
+// });
 
 
 // container2.scroll(function(e){

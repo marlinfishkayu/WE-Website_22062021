@@ -7,7 +7,6 @@
 #intdexHotPick{
     height: 1000px;
     .section-container{
-        max-width: 1920px;
         margin: auto;
     }
 }
@@ -391,6 +390,17 @@
         width: 108%;
         height: 108%;
         background-size: contain;
+    }
+    #intdexHotPick .section-container{
+        max-width: 1280px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    #intdexHotPick .section-container{
+        max-width: 1315px;
     }
 }
 

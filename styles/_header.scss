@@ -32,9 +32,7 @@
 .sticky {
 	background-color: transparent;
 }
-.hidden{
-	display: none;
-}
+
 .show{
 	opacity: 1;
 }
@@ -209,6 +207,8 @@
     margin-bottom: 0;
 	list-style: none;
 	position: relative;
+	max-width: 1920px;
+    margin: 0 auto;
 }
 #nav-area{
 	padding-left: calc(max(22px, env(safe-area-inset-left)));
@@ -259,7 +259,6 @@
 }
 .nav-icon-wrapper{
 	padding: 0.5rem 0;
-	display: flex;
     position: absolute;
     z-index: 3;
 	top: 8%;
@@ -275,7 +274,6 @@
 	height: 15px;
 }
 .search-wrapper{
-	padding-left: 15px;
 	position: relative;
 	z-index: 0;
 }
@@ -345,7 +343,7 @@
 .nav-item button{
 	display: inline-block;
     border: none;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     margin: 0;
     text-decoration: none;
     background: transparent;
@@ -526,7 +524,7 @@
 	padding: 3rem 0;
 	width: 100%;
 	height: 100%;
-	right: -100%;
+	left: -100%;
 	z-index: 5;
 	overflow-y: scroll;
 	background: #060B1A;
@@ -561,29 +559,15 @@
 			margin: 0;
 			
 		}
-		// .game-sub-item{
-		// 	padding-left: 2rem;
-		// 	li {
-		// 		font-family: $fontFuturaLight;
-		// 		text-transform: uppercase;
-		// 		font-size: 14px;
-		// 		letter-spacing: 2px;
-		// 		font-weight: 100;
-		// 		color: #B4B4B4;
-		// 	}
-		// }
 	}
 	#logoMobile{
 		position: relative;
 		.nav-logo{
 			position: absolute;
-			top: -42px;
-    		left: 0px;
+			top: -30px;
+			left: 50%;
+			transform: translate(-50%);
 		}
-	}
-	#menuMobile{
-		right: 22px;
-    	top: 15px;
 	}
 }
 //font arrow
@@ -618,7 +602,7 @@
 }
 .sidebar.open{
 	transition: 0.4s all;
-	right: 0;
+	left: 0;
 }
 .sidebar .game-show, .livegame-show{
 	text-transform: uppercase;
@@ -630,33 +614,31 @@
 	-webkit-transition: height .5s;
 	transition: height .5s;
   	transition: height 600ms cubic-bezier(.43,.13,.22,.96);
-	
 }
 .sidebar .game-show.show, .livegame-show.show{
 	height: 280px;
-	
 }
 #pills-tabContent .fade:not(.show){
 	display: none;
 }
-
+.hidden{
+	display: none;
+}
 // new menu game tab
 .sidebar{
+	transition: 0.4s all;
 	.side-wrap {
 		overflow-y: scroll;
 		overflow-x: hidden;
 	}
-	
 	.clickable {
 		padding-top: 3px;
 		width: 100%;
 		height: 70px;
 	}
-	
 	.tab-radio {
 		display: none;
 	}
-	
 	.tabs {
 		font-size: 0;
 		margin: 0;
@@ -666,46 +648,15 @@
 		position: relative;
 		z-index: 0;
 	}
-	.Scrolling-left::before {
-		content: "";
-		position: absolute;
-		top: 40px;
-		right: 0px;
-		width: 30px;
-		height: 100%;
-		background: rgb(0,10,22);
-		background: -moz-linear-gradient(90deg, rgba(0,10,22,0) 0%, rgba(0,10,22,1) 100%);
-		background: -webkit-linear-gradient(90deg, rgba(0,10,22,0) 0%, rgba(0,10,22,1) 100%);
-		background: linear-gradient(90deg, rgba(0,10,22,0) 0%, rgba(0,10,22,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000a16",endColorstr="#000a16",GradientType=1);
-		z-index: 1;
-	}
-	.Scrolling-right::after {
-		content: "";
-		position: absolute;
-		top: 40px;
-		left: 20px;
-		width: 30px;
-		height: 100%;
-		background: rgb(0,10,22);
-		background: -moz-linear-gradient(270deg, rgba(0,10,22,0) 0%, rgba(0,10,22,1) 100%);
-		background: -webkit-linear-gradient(270deg, rgba(0,10,22,0) 0%, rgba(0,10,22,1) 100%);
-		background: linear-gradient(270deg, rgba(0,10,22,0) 0%, rgba(0,10,22,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000a16",endColorstr="#000a16",GradientType=1);
-		z-index: 1;
-	}
-	
 	.labels {
 		white-space: nowrap;
 		min-width: 100%;
 		overflow-x: scroll;
 		overflow-y: hidden;
 	}
-	
 	.inner-container {
 		width: 500px;
 	}
-	
 	.labels .tab-label {
 		cursor: pointer;
 		display: inline-block;
@@ -723,7 +674,6 @@
 		vertical-align: bottom;
 		color: rgba(255, 255, 255, 0.5);
 	}
-	
 	.inner-container>span {
 		display: inline;
 		position: relative;
@@ -766,7 +716,7 @@
 	.game-box {
 		width: 123px;
 		height: 241px;
-		margin-right: 10px;
+		margin-right: 13px;
 		margin-top: 20px;
 	}
 	
@@ -848,20 +798,56 @@ ul.tab-content {
 }
 
 // Small devices (landscape phones, 576px and up)
+@media (max-width: 991px) { 
+	
+	.main-nav {
+		justify-content: space-between;
+	}
+	.menu-wrapper {
+		position: relative;
+	}
+	.nav-icon-wrapper {
+		right: 0;
+    	flex-direction: row-reverse;
+	}
+	.search-wrapper {
+		padding-right: 10px;
+	}
+	.nav-item button {
+		padding: 0;
+	}
+	.sidebar #menuMobile {
+		left: 22px;
+		top: -52px;
+	}
+	.menu-lang #icon-lang {
+		left: 71px;
+	}
+	.navbar-brand {
+		margin-right: 2rem;
+	}
+	
+}
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767px) { 
+
+	.menu-lang #icon-lang {
+		left: 0;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
 	#nav-area .search-form input{
 		width: 500px;
 	}
-	.sidebar #menuMobile{
-		right: 22px;
-    	top: 23px;
-	}
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.sidebar #logoMobile .nav-logo {
-		left: 0;
+		left: 50%;
 	}
 	.nav-logo {
 		width: 110px;

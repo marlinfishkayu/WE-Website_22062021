@@ -41,7 +41,6 @@ var arrLang = {
       'Lotto5': 'Lotto 5',
       'PK10': 'PK10 Racing',
       'Squeeze': 'Squeeze',
-      'Baccarat': 'Baccarat',
       //
       'GodofFortuneSicBo_1':'God of Fortune',
       'GodofFortuneSicBo_2':'Sic Bo',
@@ -153,7 +152,6 @@ var arrLang = {
       'Lotto5': '時時彩',
       'PK10': '北京賽車',
       'Squeeze': '共咪百家樂',
-      'Baccarat': '',
       //
       'GodofFortuneSicBo_1':'財神骰寶',
       'GodofFortuneSicBo_2':'',
@@ -265,7 +263,6 @@ var arrLang = {
       'Lotto5': '时时彩',
       'PK10': '北京赛车',
       'Squeeze': '共咪百家乐',
-      'Baccarat': '',
       //
       'GodofFortuneSicBo_1':'财神骰宝',
       'GodofFortuneSicBo_2':'',

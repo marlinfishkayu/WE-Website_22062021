@@ -6,7 +6,7 @@
         color: #fff;
     }
     .hero-intro2{
-        padding: 5rem 3rem;
+        padding: 5rem 2rem;
     }
     .bottom-deco{
         margin-top: 26rem;
@@ -56,7 +56,7 @@
         padding: 1rem 2rem;
         text-align: center;
         .hero-intro2{
-            padding: 2rem 0.5rem;
+            padding: 2rem 0;
             padding-bottom: 80px;
         }
         .livegame-scroll-title{
@@ -72,6 +72,7 @@
             position: relative;
             width: 274px;
             margin: 0 auto;
+            margin-bottom: 7rem;
             .game-item-logo{
                 width: 100px;
                 height: 100px;
@@ -313,7 +314,7 @@
 }
 .no-pointer{
     position: absolute;
-    bottom: -25%;
+    bottom: 10%;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -349,8 +350,9 @@
         margin-bottom: 4rem;
     }
     #allLiveGame .allLiveGame-main .game-item-wrap {
-            position: relative;
-            margin-top: 2rem;
+        position: relative;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
     }
     #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
         bottom: 0%;
@@ -373,5 +375,102 @@
 @media (min-width: 992px) {
     #allLiveGame .bottom-deco {
         width: 340px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) { 
+    #allLiveGame .allLiveGame-main .game-item {
+        width: 143px;
+        height: 196px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap picture:after {
+        width: 150px;
+        height: 310px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .outline-stroke {
+        width: 151.5px;
+        height: 205px;
+        top: -5px;
+        left: -3px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap picture:before {
+        width: 150px;
+        height: 200px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap {
+        width: 147px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .inner-stroke {
+        width: 150px;
+        height: 200.5px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2 {
+        font-size: 18px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap {
+        margin-bottom: 5rem;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap:after,
+    #allLiveGame .allLiveGame-main .game-item-wrap:before {
+        height: 25px;
+    }
+    #allLiveGame .allLiveGame-main .game-item:before,
+    #allLiveGame .allLiveGame-main .game-item:after {
+        width: 10px;
+        height: 10px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap:before {
+        bottom: -6px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap:after {
+        top: -6px;
+    }
+    #allLiveGame .allLiveGame-main .game-item:after {
+        top: -19px;
+    }
+    #allLiveGame .allLiveGame-main .game-item:before {
+        bottom: -17px;
+        left: 51%;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-logo {
+        width: 65px;
+        height: 65px;
+    }
+    #allLiveGame .allLiveGame-main .hovering .game-item-text p,
+    #allLiveGame .allLiveGame-main .hovering .game-item-text .main-button {
+        opacity: 0;
+    }
+    #allLiveGame .allLiveGame-main .game-item-text {
+        transform: translate(-50%, 26%);
+        bottom: 3%;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
+        bottom: 0%;
+    }
+    #allLiveGame .allLiveGame-main .hovering .game-item-text {
+        transform: translate(-50%, 30%);
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h4 {
+        font-size: 12px;
+    }
+    .no-pointer {
+        bottom: 0%;
+        height: 81px;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .mid-line {
+        opacity: 0;
+    }
+    #allLiveGame .allLiveGame-bkg {
+        position: absolute;
+        top: 25%;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .mid-line {
+        margin-bottom: 0;
+    }
+    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-logo {
+        transition: transform 200ms, opacity 600ms, 
+        -webkit-transform 200ms;
+
     }
 }
