@@ -7547,7 +7547,7 @@ select.form-control::-ms-expand {
 }
 
 #allLiveGame .allLiveGame-main .game-item-wrap .inner-stroke {
-  outline: 1px solid #9e815b;
+  outline: 1px solid #7d6443;
   outline-offset: -10px;
   position: absolute;
   top: -1px;
