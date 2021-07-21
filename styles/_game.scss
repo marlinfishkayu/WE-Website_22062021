@@ -423,6 +423,7 @@
 #GOFfooter{
     margin-top: -6rem;
 }
+
 //blockchain
 .BC-series{
 	font-family: $fontFuturaCondensedMedium;
@@ -456,6 +457,11 @@
     #GodofFortuneRoulette .hero-header::after {
         position: absolute;
         top: -90px;
+    }
+    #liveGame .hero-intro1 {
+        padding: 0 2rem;
+        max-width: 400px;
+        line-height: 35px;
     }
 }
 // Small devices (landscape phones, 576px and up)
@@ -673,6 +679,7 @@
     #liveGame #PK10 .header-deco h4 {
         margin-top: -2rem;
     }
+
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 820px) {
@@ -774,4 +781,6 @@
     #GodofFortuneRoulette .live-game-main #feature3 .feature-text{
         padding-top: 200px;
     }
+    
 }
+

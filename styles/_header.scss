@@ -716,7 +716,7 @@
 	.game-box {
 		width: 123px;
 		height: 241px;
-		margin-right: 13px;
+		margin-right: 16px;
 		margin-top: 20px;
 	}
 	
@@ -915,6 +915,9 @@ ul.tab-content {
 		position: absolute;
 		left: 15%;
 	}
+	.lang-dropdown {
+		right: -70px;
+	}
 }
 
 // Large devices (desktops, 992px and up)
@@ -974,6 +977,9 @@ ul.tab-content {
 	}
 	.sidebar{
 		display: none;
+	}
+	.lang-dropdown {
+		right: -10px;
 	}
  }
 

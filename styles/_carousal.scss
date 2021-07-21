@@ -342,7 +342,7 @@
         position: relative;
         &:after{
             content:'';
-            transform: scale(0.85);
+            transform: scale(0.9);
             position: absolute;
             top: 0px;
             left: 0%;
@@ -640,7 +640,16 @@
 @media (min-width: 768px) {
     #diamondCarousel .active-img {
         width: 400px;
+        // padding-right: 30px;
     }
+    // #diamondCarousel .active-img:nth-child(0),
+    // #diamondCarousel .active-img:nth-child(1){
+    //     padding-right: 30px;
+    // }
+    // #diamondCarousel .active-img:last-child{
+    //     padding-right: 0px;
+    //     padding-left: 30px;
+    // }
     #diamondCarousel .active-img:after {
         left: 2.5%;
     }
