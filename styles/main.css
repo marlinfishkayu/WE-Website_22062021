@@ -7822,7 +7822,6 @@ select.form-control::-ms-expand {
     height: 198px;
     top: 0px;
     left: -4px;
-    display: none;
   }
   #allLiveGame .allLiveGame-main .game-item-wrap .game-item-logo {
     width: 65px;
