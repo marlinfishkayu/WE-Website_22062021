@@ -1367,7 +1367,8 @@ button:focus {
 }
 
 .menu-btn {
-  width: 30px;
+  padding-top: 5px;
+  width: 25px;
   height: 30px;
   position: relative;
   display: -webkit-box;
@@ -1387,7 +1388,7 @@ button:focus {
 .menu-btn__burger,
 .menu-btn__burger::before,
 .menu-btn__burger::after {
-  width: 30px;
+  width: 25px;
   height: 1px;
   left: 0px;
   border-radius: 5px;
@@ -3774,6 +3775,15 @@ footer {
   }
 }
 
+@media (max-width: 575px) {
+  #allLiveGame .bottom-deco {
+    margin-top: 5rem;
+  }
+  #allLiveGame .allLiveGame-main {
+    padding-top: 80px;
+  }
+}
+
 .hero-header {
   height: 500px;
 }
@@ -4296,6 +4306,7 @@ footer {
   #liveGame .hero-intro1 {
     padding: 0 2rem;
     max-width: 400px;
+    margin: 0 auto;
     line-height: 35px;
   }
 }
@@ -7003,7 +7014,7 @@ select.form-control::-ms-expand {
 #liveStudio .livestudio-hightlight-wrap .cert-wrap .hero-intro2 {
   padding-top: 2rem;
   font-size: 16px;
-  padding: 3rem 2rem;
+  padding: 3rem 0rem;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -7049,8 +7060,8 @@ select.form-control::-ms-expand {
 }
 
 #liveStudio .studio-bottom-main {
-  padding: 3rem 2rem;
-  max-width: 700px;
+  padding: 3rem 0rem;
+  max-width: 293px;
   margin: auto;
 }
 
@@ -7063,7 +7074,7 @@ select.form-control::-ms-expand {
   position: relative;
   text-align: center;
   padding-top: 40px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #liveStudio .studio-bottom-main .studio-bottom-btn-wrap {
@@ -7262,6 +7273,10 @@ select.form-control::-ms-expand {
   }
   #liveStudio .livestudio-hightlight-wrap .large-text p {
     padding-top: 3rem;
+  }
+  #liveStudio .studio-bottom-main {
+    max-width: 700px;
+    padding: 3rem 0rem;
   }
 }
 
@@ -7547,7 +7562,7 @@ select.form-control::-ms-expand {
 }
 
 #allLiveGame .allLiveGame-main .game-item-wrap .inner-stroke {
-  outline: 1px solid #7d6443;
+  outline: 1px solid #B0936D;
   outline-offset: -10px;
   position: absolute;
   top: -1px;
@@ -7831,10 +7846,12 @@ select.form-control::-ms-expand {
   #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
-    bottom: 0%;
+    top: 7%;
   }
   #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text h2 {
     font-size: 15px;
+    max-width: 100px;
+    margin: 0 auto;
   }
   #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text p {
     font-size: 10px;
@@ -7858,6 +7875,9 @@ select.form-control::-ms-expand {
   .no-pointer {
     bottom: 0%;
     height: 81px;
+  }
+  #allLiveGame .allLiveGame-main .game-item-wrap .inner-stroke {
+    outline: 1px solid #7d6443;
   }
 }
 
@@ -8424,12 +8444,25 @@ select.form-control::-ms-expand {
     line-height: 1.5;
     font-weight: 100;
   }
-  #AboutWE .about-top-deco-2 {
-    display: none;
-  }
   #AboutWE .about-brandStory {
     padding-top: 5rem;
     padding-bottom: 15rem;
+  }
+  #AboutWE .about-brandStory .about-h2 {
+    padding-top: 58px;
+    margin-bottom: 0;
+  }
+  #AboutWE .about-brandStory .line-deco {
+    margin-bottom: 10px;
+    padding-top: 1rem;
+    display: block;
+  }
+  #AboutWE .about-brandStory .about-p {
+    padding: 0;
+    max-width: inherit;
+  }
+  #AboutWE .about-brandStory .line-deco-vertical {
+    bottom: 111px;
   }
   #AboutWE .about-h2 {
     font-size: 36px;
@@ -8447,34 +8480,41 @@ select.form-control::-ms-expand {
     padding: 0;
     margin-top: -36px;
   }
+  #AboutWE .about-mission #upper-frame {
+    position: absolute;
+    top: -49%;
+    right: 3%;
+    width: 844px;
+    height: 291px;
+    display: block;
+  }
+  #AboutWE .about-mission .upper .about-p {
+    padding: 0;
+    text-align: left;
+    width: 492px;
+    margin-top: -8px;
+    margin-left: -30px;
+    line-height: 30px;
+  }
+  #AboutWE .about-mission .line-deco {
+    padding: 10px 0;
+  }
+  #AboutWE .about-top-deco-2 {
+    display: none;
+  }
   #AboutWE .Dynamic-frame {
     width: 911px;
     height: 531px;
   }
-  #AboutWE .about-brandStory .about-h2 {
-    padding-top: 58px;
-    margin-bottom: 0;
-  }
-  #AboutWE .about-brandStory .line-deco {
-    margin-bottom: 10px;
-    padding-top: 1rem;
-    display: block;
+  #AboutWE .hero-header-bkg {
+    height: 800px;
   }
   #brandstory-about {
     padding-top: 2rem;
   }
-  #AboutWE .hero-header-bkg {
-    height: 800px;
-  }
-  #AboutWE .about-brandStory .about-p {
-    padding: 0;
-    max-width: inherit;
-  }
   #AboutWE .lower .about-p {
     padding: 0;
-  }
-  #AboutWE .about-mission .line-deco {
-    padding: 10px 0;
+    font-size: 16px;
   }
   #AboutWE #Dynamic-frame-2-m {
     display: none;
@@ -8496,22 +8536,6 @@ select.form-control::-ms-expand {
   #AboutWE #Dynamic-frame-2-outer-m {
     display: none;
   }
-  #AboutWE .about-mission #upper-frame {
-    position: absolute;
-    top: -49%;
-    right: 3%;
-    width: 844px;
-    height: 291px;
-    display: block;
-  }
-  #AboutWE .about-mission .upper .about-p {
-    padding: 0;
-    text-align: left;
-    width: 492px;
-    margin-top: -8px;
-    margin-left: -30px;
-    line-height: 30px;
-  }
   #AboutWE .about-mission .line-deco-vertical {
     top: -68%;
     left: 50%;
@@ -8525,12 +8549,13 @@ select.form-control::-ms-expand {
     width: 542px;
     height: 962px;
   }
-  #AboutWE .about-cert .cert-diamond-stroke-2, #AboutWE .about-cert .cert-diamond-stroke {
-    width: 351px;
-    height: 635px;
-  }
   #AboutWE .about-cert .about-bottom-deco {
     margin-top: 7rem;
+  }
+  #AboutWE .about-cert .cert-diamond-stroke-2,
+  #AboutWE .about-cert .cert-diamond-stroke {
+    width: 351px;
+    height: 635px;
   }
   #AboutWE .Dynamic-frame {
     display: block;
@@ -8543,9 +8568,6 @@ select.form-control::-ms-expand {
     width: 965px;
     height: 588px;
     display: block;
-  }
-  #AboutWE .about-brandStory .line-deco-vertical {
-    bottom: 111px;
   }
   #AboutWE .about-brandStory,
   #AboutWE .about-mission,
@@ -8568,7 +8590,7 @@ select.form-control::-ms-expand {
     padding-bottom: 19px;
   }
   #AboutWE .about-mission .about-h4 {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
   #AboutWE .about-mission #upper-frame {
     top: -39%;
@@ -8587,6 +8609,22 @@ select.form-control::-ms-expand {
   }
   #AboutWE .about-brandStory .line-deco-vertical {
     bottom: 115px;
+  }
+}
+
+@media (max-width: 575px) {
+  #AboutWE .about-mission .lower .about-p {
+    font-size: 16px;
+    padding-top: 0rem;
+  }
+  #AboutWE .about-mission .lower {
+    max-width: 293px;
+    margin: 0 auto;
+  }
+  #AboutWE .about-h4 {
+    font-size: 20px;
+    padding: 1rem;
+    line-height: inherit;
   }
 }
 

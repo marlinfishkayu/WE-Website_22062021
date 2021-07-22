@@ -466,67 +466,88 @@
 }
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    #AboutWE .about-main{
-        margin-top: 5rem;
-        padding-bottom: 0rem;
-        
-    }
-    #AboutWE .about-p {
-        font-size: 20px;
-        line-height: 1.5;
-        font-weight: 100;
-    }
-    #AboutWE .about-top-deco-2 {
-        display: none;
-    }
-    #AboutWE .about-brandStory {
-        padding-top: 5rem;
-        padding-bottom: 15rem;
-    }
-    #AboutWE .about-h2{
-        font-size: 36px;
-    }
-    #AboutWE .about-mission {
-        padding-top: 13rem;  
-        margin-bottom: 9rem;
-    }
-    #AboutWE .about-mission .about-h2 {
-        padding-left: 0rem;
-        line-height: 48px;
-        padding-top: 0;
-    }
-    #AboutWE .about-mission .lower{
-        padding: 0;
-        margin-top: -36px;
-    }
-    #AboutWE .Dynamic-frame{
-        width: 911px;
-        height: 531px;
-    }
-    #AboutWE .about-brandStory .about-h2{
-        padding-top: 58px;
-        margin-bottom: 0;
-    }
-    #AboutWE .about-brandStory .line-deco{
-        margin-bottom: 10px;
-        padding-top: 1rem;
-        display: block;
+    #AboutWE {
+        .about-main{
+            margin-top: 5rem;
+            padding-bottom: 0rem;
+        }
+        .about-p {
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: 100;
+        }
+        .about-brandStory {
+            padding-top: 5rem;
+            padding-bottom: 15rem;
+            .about-h2{
+                padding-top: 58px;
+                margin-bottom: 0;
+            }
+            .line-deco{
+                margin-bottom: 10px;
+                padding-top: 1rem;
+                display: block;
+            }
+            .about-p{
+                padding: 0;
+                max-width: inherit;
+            }
+            .line-deco-vertical {
+                bottom: 111px;
+            }
+        }
+        .about-h2{
+            font-size: 36px;
+        }
+        .about-mission {
+            padding-top: 13rem;  
+            margin-bottom: 9rem;
+            .about-h2 {
+                padding-left: 0rem;
+                line-height: 48px;
+                padding-top: 0;
+            }
+            .lower{
+                padding: 0;
+                margin-top: -36px;
+            }
+            #upper-frame {
+                position: absolute;
+                top: -49%;
+                right: 3%;
+                width: 844px;
+                height: 291px;
+                display: block;
+            }
+            .upper .about-p{
+                padding:0;
+                text-align: left;
+                width: 492px;
+                margin-top: -8px;
+                margin-left: -30px;
+                line-height: 30px;
+            }
+            .line-deco {
+                padding: 10px 0;
+            }
+        }
+        .about-top-deco-2 {
+            display: none;
+        }
+        .Dynamic-frame{
+            width: 911px;
+            height: 531px;
+        }
+        .hero-header-bkg {
+            height: 800px;
+        }
     }
     #brandstory-about{
         padding-top: 2rem;
     }
-    #AboutWE .hero-header-bkg {
-        height: 800px;
-    }
-    #AboutWE .about-brandStory .about-p{
-        padding: 0;
-        max-width: inherit;
-    }
-    #AboutWE  .lower .about-p {
+    #AboutWE .lower .about-p {
         padding:0;
-    }
-    #AboutWE .about-mission .line-deco {
-        padding: 10px 0;
+        font-size: 16px;
     }
     #AboutWE #Dynamic-frame-2-m{
         display: none;
@@ -547,22 +568,6 @@
     #AboutWE #Dynamic-frame-2-outer-m{
         display: none;
     }
-    #AboutWE .about-mission #upper-frame {
-        position: absolute;
-        top: -49%;
-        right: 3%;
-        width: 844px;
-        height: 291px;
-        display: block;
-    }
-    #AboutWE .about-mission .upper .about-p{
-        padding:0;
-        text-align: left;
-        width: 492px;
-        margin-top: -8px;
-        margin-left: -30px;
-        line-height: 30px;
-    }
     #AboutWE .about-mission .line-deco-vertical{
         top: -68%;
         left: 50%;
@@ -571,17 +576,18 @@
         height: 900px;
         margin-top: 10rem;
         padding-top: 14rem;
-    }
-    #AboutWE .about-cert .cert-diamond {
-        width: 542px;
-        height: 962px;
-    }
-    #AboutWE .about-cert .cert-diamond-stroke-2, #AboutWE .about-cert .cert-diamond-stroke {
-        width: 351px;
-        height: 635px;
-    }
-    #AboutWE .about-cert .about-bottom-deco {
-        margin-top: 7rem;
+        .cert-diamond {
+            width: 542px;
+            height: 962px;
+        }
+        .about-bottom-deco {
+            margin-top: 7rem;
+        }
+        .cert-diamond-stroke-2,
+        .cert-diamond-stroke {
+            width: 351px;
+            height: 635px;
+        }
     }
     #AboutWE .Dynamic-frame{
         display: block;
@@ -595,16 +601,13 @@
         height: 588px;
         display: block;
     }
-    #AboutWE .about-brandStory .line-deco-vertical {
-        bottom: 111px;
-    }
     #AboutWE .about-brandStory,
     #AboutWE .about-mission, 
     #AboutWE .about-slogan {
         margin-top: -5rem;
     }
     #AboutWE #Dynamic-frame-outer-m,
-    #AboutWE  #Dynamic-frame-m{
+    #AboutWE #Dynamic-frame-m{
         display: none;
     }
     #AboutWE #Dynamic-frame-outer-w,
@@ -618,12 +621,14 @@
     #AboutWE .about-slogan .line-deco {
         padding-bottom: 19px;
     }
-    #AboutWE .about-mission .about-h4 {
-        margin-top: 5rem;
-    }
-    #AboutWE .about-mission #upper-frame {
-        top: -39%;
-        transform: scaleY(1.15);
+    #AboutWE .about-mission {
+        .about-h4 {
+            margin-top: 7rem;
+        }
+        #upper-frame {
+            top: -39%;
+            transform: scaleY(1.15);
+        }
     }
  }
 // Extra large devices (large desktops, 1200px and up)
@@ -636,5 +641,22 @@
     }
     #AboutWE .about-brandStory .line-deco-vertical {
         bottom: 115px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+    #AboutWE .about-mission .lower .about-p {
+        font-size: 16px;
+        padding-top: 0rem;
+    }
+    #AboutWE .about-mission .lower  {
+        max-width: 293px;
+        margin: 0 auto;
+    }
+    #AboutWE .about-h4 {
+        font-size: 20px;
+        padding: 1rem;
+        line-height: inherit;
     }
 }

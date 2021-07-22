@@ -299,7 +299,7 @@
         .hero-intro2{
             padding-top: 2rem;
             font-size: 16px;
-            padding: 3rem 2rem;
+            padding: 3rem 0rem;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -339,8 +339,8 @@
     
 }
 #liveStudio .studio-bottom-main{
-    padding: 3rem 2rem;
-    max-width: 700px;
+    padding: 3rem 0rem;
+    max-width: 293px;
     margin: auto;
     .bottom-deco{
         text-transform: uppercase;
@@ -350,7 +350,7 @@
         position: relative;
         text-align: center;
         padding-top: 40px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .studio-bottom-btn-wrap{
         text-align: center;
@@ -544,6 +544,10 @@
     }
     #liveStudio .livestudio-hightlight-wrap .large-text p {
         padding-top: 3rem;
+    }
+    #liveStudio .studio-bottom-main {
+        max-width: 700px;
+        padding: 3rem 0rem;
     }
 }   
 

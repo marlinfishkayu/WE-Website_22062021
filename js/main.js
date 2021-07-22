@@ -321,7 +321,7 @@ $("#diamondCarousel").on("initialized.owl.carousel changed.owl.carousel", functi
         center: false,
         items: 1,
         loop: false,
-        margin: 10,
+        margin: 30,
         autoplay: false,
         autoplayTimeout: 2000,
         responsive: {
