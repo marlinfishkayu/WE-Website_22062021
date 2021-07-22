@@ -3470,8 +3470,8 @@ footer {
 }
 
 .active .expand-deco {
-  -webkit-transform: translate(-50%, -18%);
-          transform: translate(-50%, -18%);
+  -webkit-transform: translate(-54%, -18%);
+          transform: translate(-54%, -18%);
 }
 
 .active .expand-deco .expand-icon {
