@@ -353,6 +353,10 @@
         .more-button{
             display: none;
         }
+        .expand-icon {
+            transform: scale(0.6);
+            margin-right: 0;
+        }
     } 
     .main-button a:after {
         content: '';
@@ -374,10 +378,6 @@
             width: 382px;
             height: 382px;
         }
-    }
-    .our-gamaes .expand-deco .expand-icon {
-        transform: scale(0.6);
-        margin-right: 0;
     }
  }
 // Extra large devices (large desktops, 1200px and up)
