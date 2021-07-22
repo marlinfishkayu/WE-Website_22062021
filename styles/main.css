@@ -2495,12 +2495,6 @@ footer {
   margin: 0 auto;
 }
 
-.news-item-img picture {
-  position: relative;
-  width: 300px;
-  height: 300px;
-}
-
 #intdexWhatsNews .news-item-text {
   width: 270px;
   height: 327px;
@@ -2516,11 +2510,6 @@ footer {
   font-size: 14px;
   color: #B0936D;
   letter-spacing: 2px;
-}
-
-#intdexWhatsNews .text-gold-btn {
-  text-decoration: none;
-  padding-top: 30px;
 }
 
 #intdexWhatsNews .news-item-text a:hover {
@@ -2539,6 +2528,8 @@ footer {
 
 #intdexWhatsNews .text-gold-btn {
   position: relative;
+  text-decoration: none;
+  padding-top: 30px;
   width: 300px;
   width: 600px;
 }
@@ -2560,6 +2551,12 @@ footer {
   background-size: contain;
   background-position: 50% 50%;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDMwIDExIj4KICA8cG9seWxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjODk2NjNEIiBwb2ludHM9IjEzMSAxNzguNzY5IDEzMSAxOTIuMDY2IDExMSAxNzIuMDY2IiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgLTEzOS42MjIgMjI0LjAyKSIvPgo8L3N2Zz4K");
+}
+
+.news-item-img picture {
+  position: relative;
+  width: 300px;
+  height: 300px;
 }
 
 #intdexWhatsNews .text-gold-btn:hover::after {
@@ -3467,14 +3464,14 @@ footer {
   white-space: nowrap;
 }
 
-.active .expand-deco {
-  -webkit-transform: translate(-53%, -18%);
-          transform: translate(-53%, -18%);
-}
-
 .our-games .active .expand-deco {
   -webkit-transform: translate(-57%, -18%);
           transform: translate(-57%, -18%);
+}
+
+.active .expand-deco {
+  -webkit-transform: translate(-50%, -18%);
+          transform: translate(-50%, -18%);
 }
 
 .active .expand-deco .expand-icon {
@@ -3497,20 +3494,6 @@ footer {
 
 #intdexHotPick, #intdexWhatsNews {
   position: relative;
-}
-
-#intdexWhatsNews
-.intdexWhatsNews-bkg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-#intdexWhatsNews
-.intdexWhatsNews-bkg img {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .deco-cat {
@@ -3570,6 +3553,18 @@ footer {
 
 #intdexWhatsNews .deco-content {
   padding-bottom: 1rem;
+}
+
+#intdexWhatsNews .intdexWhatsNews-bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#intdexWhatsNews .intdexWhatsNews-bkg img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .more-button {
@@ -3676,15 +3671,12 @@ footer {
   }
   #introCarousel .news-outer {
     left: 56%;
+    width: 300px;
+    height: 300px;
   }
   #introCarousel .news-column {
     width: 328px;
     height: 328px;
-  }
-  #introCarousel .news-outer {
-    left: 56%;
-    width: 300px;
-    height: 300px;
   }
   .our-gamaes .ourgames-img {
     margin-bottom: 10rem;
@@ -3714,11 +3706,11 @@ footer {
   .our-gamaes .expand-deco {
     display: block;
   }
-  .our-gamaes .more-button {
-    display: none;
-  }
   .our-gamaes .expand-deco .more-deco-wrap {
     width: 231px;
+  }
+  .our-gamaes .more-button {
+    display: none;
   }
   .main-button a:after {
     content: '';
@@ -3726,6 +3718,9 @@ footer {
   }
   #intdexWhatsNews .news-item-text {
     padding-top: inherit;
+  }
+  #intdexWhatsNews .news-item-text .text-gold {
+    margin-top: 6rem;
   }
   #introCarousel .news-column {
     width: 358px;
@@ -3735,9 +3730,6 @@ footer {
     left: 55%;
     width: 382px;
     height: 382px;
-  }
-  #intdexWhatsNews .news-item-text .text-gold {
-    margin-top: 6rem;
   }
   .our-gamaes .expand-deco .expand-icon {
     -webkit-transform: scale(0.6);
@@ -4348,15 +4340,34 @@ footer {
     padding-top: 29rem;
     padding-bottom: 0rem;
   }
-  .bottom-container {
-    margin-bottom: 0rem;
-  }
   #liveGame #PK10 .hero-icon {
     width: 300px;
   }
   #liveGame .hero-header h1 {
+    margin-top: 1.5rem;
     font-size: 80px;
     line-height: 90px;
+  }
+  #liveGame .header-deco {
+    margin-top: 13rem;
+  }
+  #liveGame .hero-intro1 {
+    margin-top: -4rem;
+    padding-top: 0;
+    padding-bottom: 0rem;
+  }
+  #liveGame .blockchain .hero-header {
+    height: 760px;
+  }
+  #liveGame #GodofFortuneSicBo .hero-icon, #liveGame #GodofFortuneRoulette .hero-icon {
+    padding-top: 27rem;
+  }
+  #liveGame #Lotto5 .header-deco h4,
+  #liveGame #PK10 .header-deco h4 {
+    margin-top: -2rem;
+  }
+  .bottom-container {
+    margin-bottom: 0rem;
   }
   #GodofFortuneSicBo .hero-header::after,
   #GodofFortuneRoulette .hero-header::after {
@@ -4368,17 +4379,6 @@ footer {
   #GodofFortuneRoulette .hero-header .GOF-series {
     font-size: 42px;
     padding-top: 30px;
-  }
-  #liveGame .header-deco {
-    margin-top: 13rem;
-  }
-  #liveGame .hero-header h1 {
-    margin-top: 1.5rem;
-  }
-  #liveGame .hero-intro1 {
-    margin-top: -4rem;
-    padding-top: 0;
-    padding-bottom: 0rem;
   }
   .live-game-main .main-button {
     margin-top: 2.5rem;
@@ -4400,14 +4400,22 @@ footer {
   .live-game-main .feature-row {
     margin-top: 3rem;
   }
+  .live-game-main .feature-text {
+    padding-left: 3rem;
+    padding-top: 100px;
+    margin-top: 0rem;
+    width: 900px;
+  }
+  .live-game-main .feature-flexitem {
+    padding: 0rem 3rem;
+    padding-bottom: 0rem;
+  }
   .live-game-main .feature-flexbox {
     margin-bottom: inherit;
   }
   .live-game-main .feature-flexbox img {
-    width: 483px;
-  }
-  .live-game-main .feature-flexbox .hero-intro2 {
-    margin-top: 0rem;
+    width: 300px;
+    padding: 2rem 0;
   }
   .live-game-main .feature-flexbox .hero-intro2 {
     margin-top: 1rem;
@@ -4415,7 +4423,7 @@ footer {
   .feature-flexbox .feature-flexbox-h2 {
     margin: inherit;
     font-size: 30px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
   .feature-flexbox .feature-flexbox-h2:before {
     top: 35px;
@@ -4437,23 +4445,6 @@ footer {
     left: 17px;
     width: 269px;
     height: 178px;
-  }
-  .live-game-main .feature-text {
-    padding-left: 3rem;
-    padding-top: 100px;
-    margin-top: 0rem;
-    width: 900px;
-  }
-  .live-game-main .feature-flexitem {
-    padding: 0rem 3rem;
-    padding-bottom: 0rem;
-  }
-  .live-game-main .feature-flexbox img {
-    width: 300px;
-    padding: 2rem 0;
-  }
-  .game-platform h3 {
-    font-size: 26px;
   }
   .game-platform {
     text-align: center;
@@ -4516,16 +4507,6 @@ footer {
   .game-platform {
     margin-bottom: 6rem;
   }
-  #liveGame .blockchain .hero-header {
-    height: 760px;
-  }
-  #liveGame #GodofFortuneSicBo .hero-icon, #liveGame #GodofFortuneRoulette .hero-icon {
-    padding-top: 27rem;
-  }
-  #liveGame #Lotto5 .header-deco h4,
-  #liveGame #PK10 .header-deco h4 {
-    margin-top: -2rem;
-  }
 }
 
 @media (min-width: 820px) {
@@ -4543,10 +4524,18 @@ footer {
     padding-bottom: 2rem;
   }
   .live-game-main .feature-text {
-    padding-left: 1rem;
+    padding-left: 5rem;
   }
   .live-game-main .feature-flexbox img {
     width: 400px;
+  }
+  .live-game-main .game-UI {
+    width: 100%;
+    height: 100%;
+    max-width: 902px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding: 0;
   }
   .feature-photo {
     max-width: inherit;
@@ -4562,28 +4551,14 @@ footer {
   .feature-flexbox .feature-flexbox-h2 {
     font-size: 36px;
   }
-  .live-game-main .feature-text {
-    padding-left: 5rem;
-  }
   #SqueezeBaccarat .hero-header, .live-game-main {
     margin-bottom: 1rem;
-  }
-  .live-game-main .game-UI {
-    width: 100%;
-    height: 100%;
-    max-width: 902px;
-    margin: 0 auto;
-    margin-top: 5rem;
-    padding: 0;
   }
   #BaccaratType {
     text-align: left;
   }
   #BaccaratType .baccarat-type {
     width: 100%;
-  }
-  #GodofFortuneRoulette .live-game-main #feature2 .feature-text {
-    padding-top: 110px;
   }
   #GodofFortuneRoulette .live-game-main #feature2 .feature-text {
     padding-top: 120px;
@@ -4599,9 +4574,6 @@ footer {
 @media (min-width: 1200px) {
   .live-game-main .feature-flexbox img {
     width: 507px;
-  }
-  .feature-photo {
-    max-width: inherit;
   }
   .feature-photo {
     max-width: inherit;
@@ -6528,14 +6500,14 @@ select.form-control::-ms-expand {
   height: 400px;
 }
 
-#services .hero-header-bkg {
-  height: 400px;
-}
-
-#services .hero-header::after {
+#services .hero-header:after {
   background: #060b1a;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 11, 26, 0.6)), to(#070a1b));
   background: linear-gradient(180deg, rgba(6, 11, 26, 0.6) 0%, #070a1b 100%);
+}
+
+#services .hero-header-bkg {
+  height: 400px;
 }
 
 .services-row {
@@ -6577,8 +6549,6 @@ select.form-control::-ms-expand {
 @media (min-width: 768px) {
   #services .services-main {
     padding-top: 100px;
-  }
-  #services .services-main {
     max-width: 800px;
   }
   .services-row {
@@ -6611,14 +6581,14 @@ select.form-control::-ms-expand {
   #services .services-main {
     max-width: 1200px;
   }
-  .service-item {
-    padding: 5px 5rem;
-  }
   #services .hero-header {
     height: 500px;
   }
   #services .hero-header-bkg {
     height: 500px;
+  }
+  .service-item {
+    padding: 5px 5rem;
   }
 }
 
@@ -6884,10 +6854,6 @@ select.form-control::-ms-expand {
   opacity: 0;
 }
 
-#liveStudio .hovering-slide .studio-img-wrap picture::after {
-  opacity: 0;
-}
-
 .hovering-slide .studio-slide-text {
   opacity: 0;
   -webkit-transition: 3s ease;
@@ -6923,6 +6889,10 @@ select.form-control::-ms-expand {
   transition: 2s all;
   -webkit-transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
           transition-timing-function: cubic-bezier(0.12, 0.77, 0.51, 1);
+}
+
+#liveStudio .hovering-slide .studio-img-wrap picture::after {
+  opacity: 0;
 }
 
 #liveStudio .livestudio-sec2 {
@@ -7223,11 +7193,11 @@ select.form-control::-ms-expand {
     width: inherit;
     margin: inherit;
   }
-  #liveStudio .studio-bottom-main .hero-intro2 {
-    font-size: 20px;
-  }
   #liveStudio .studio-bottom-main {
     padding-bottom: 5rem;
+  }
+  #liveStudio .studio-bottom-main .hero-intro2 {
+    font-size: 20px;
   }
   #liveStudio .showless-wrap {
     height: auto;
@@ -7246,22 +7216,22 @@ select.form-control::-ms-expand {
     font-size: 18px;
   }
   #liveStudio .livestudio-hightlight-wrap .bottom-deco {
-    width: 389px;
+    width: 288px;
   }
   #liveStudio .livestudio-hightlight-wrap .cert-wrap {
     width: 500px;
   }
-  #liveStudio .livestudio-sec3 .bottom-deco {
-    width: 353px;
-  }
   #liveStudio .livestudio-hightlight-wrap .liveStudio-break {
     display: block;
   }
-  #liveStudio .livestudio-hightlight-wrap .bottom-deco {
-    width: 288px;
+  #liveStudio .livestudio-hightlight-wrap .large-text p {
+    padding-top: 3rem;
   }
   #liveStudio .livestudio-hightlight-wrap #liceCert {
     width: 300px;
+  }
+  #liveStudio .livestudio-sec3 .bottom-deco {
+    width: 353px;
   }
   .studio-card .studio-slide-text {
     max-width: 230px;
@@ -7270,9 +7240,6 @@ select.form-control::-ms-expand {
   .studio-card {
     height: 550px;
     width: 295px;
-  }
-  #liveStudio .livestudio-hightlight-wrap .large-text p {
-    padding-top: 3rem;
   }
   #liveStudio .studio-bottom-main {
     max-width: 700px;
@@ -7293,11 +7260,8 @@ select.form-control::-ms-expand {
     line-height: 120%;
     width: 361px;
   }
-  #liveStudio .studio-bottom-main .bottom-deco {
-    width: 380px;
-  }
-  #liveStudio .studio-bottom-main .studio-bottom-btn-wrap {
-    padding-top: 4rem;
+  #liveStudio .livestudio-hightlight-wrap .large-text p {
+    text-align: left;
   }
   #liveStudio .livestudio-hightlight-wrap .liveStudio-break {
     display: none;
@@ -7305,11 +7269,14 @@ select.form-control::-ms-expand {
   #liveStudio .livestudio-hightlight-wrap #liceCert {
     width: 343px;
   }
+  #liveStudio .studio-bottom-main .bottom-deco {
+    width: 380px;
+  }
+  #liveStudio .studio-bottom-main .studio-bottom-btn-wrap {
+    padding-top: 4rem;
+  }
   #liveStudio .livestudio-sec3 .bottom-deco {
     width: 497px;
-  }
-  #liveStudio .livestudio-hightlight-wrap .large-text p {
-    text-align: left;
   }
   #liveStudio .showless-wrap {
     height: auto;
@@ -7750,13 +7717,12 @@ select.form-control::-ms-expand {
 }
 
 @media (min-width: 768px) {
-  #allLiveGame .hero-intro2 {
-    font-size: 20px;
-    max-width: 712px;
-    margin: 0 auto;
-    line-height: inherit;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+  #allLiveGame .allLiveGame-main {
+    padding: 7rem 2rem;
+  }
+  #allLiveGame .allLiveGame-main .hero-intro2 {
+    padding-bottom: 20px;
+    font-weight: 300;
   }
   #allLiveGame .allLiveGame-main .game-item-wrap {
     position: relative;
@@ -7766,18 +7732,19 @@ select.form-control::-ms-expand {
   #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
     bottom: 0%;
   }
-  #allLiveGame .allLiveGame-main .hero-intro2 {
-    padding-bottom: 20px;
-    font-weight: 300;
+  #allLiveGame .hero-intro2 {
+    font-size: 20px;
+    max-width: 712px;
+    margin: 0 auto;
+    line-height: inherit;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
-  #allLiveGame .allLiveGame-main {
-    padding: 7rem 2rem;
+  #allLiveGame .bottom-deco {
+    width: 294px;
   }
   #allLiveGame.AllLottery .bottom-deco {
     width: 320px;
-  }
-  .allLiveGame-main .bottom-deco {
-    width: 294px;
   }
 }
 
@@ -8306,13 +8273,6 @@ select.form-control::-ms-expand {
     width: 100%;
     max-width: 900px;
   }
-  #AboutWE .line-deco {
-    padding-top: 1rem;
-    display: none;
-  }
-  #AboutWE .hero-header-bkg {
-    height: 500px;
-  }
   #AboutWE #about-top-deco-m,
   #AboutWE #about-bottom-deco-m,
   #AboutWE #Dynamic-frame-outer-w,
@@ -8325,8 +8285,8 @@ select.form-control::-ms-expand {
   #AboutWE #Dynamic-frame-outer-m {
     display: block;
   }
-  #AboutWE .about-brandStory .about-p {
-    padding: 13px 3rem;
+  #AboutWE .about-h2 {
+    font-size: 36px;
   }
   #AboutWE .about-p {
     font-size: 22px;
@@ -8341,54 +8301,50 @@ select.form-control::-ms-expand {
     height: 764px;
     display: block;
   }
-  #AboutWE .about-brandStory .about-p {
-    max-width: 600px;
-  }
-  #AboutWE .about-h2 {
-    font-size: 36px;
-  }
   #AboutWE .about-brandStory {
     border-bottom: none;
   }
-  #AboutWE .about-brandStory,
-  #AboutWE .about-mission,
-  #AboutWE .about-slogan {
-    border: none;
-    margin-top: 8rem;
-  }
-  #AboutWE .about-cert .about-cert-icon {
-    margin: 20px 30px;
+  #AboutWE .about-brandStory .about-p {
+    max-width: 600px;
+    padding: 13px 3rem;
   }
   #AboutWE .about-brandStory .line-deco-vertical {
     display: block;
     bottom: -14%;
     margin: 0 auto;
   }
-  #AboutWE #Dynamic-frame-2-w {
+  #AboutWE .hero-header-bkg {
+    height: 500px;
+  }
+  #AboutWE .line-deco {
+    padding-top: 1rem;
     display: none;
+  }
+  #AboutWE .about-cert .about-cert-icon {
+    margin: 20px 30px;
   }
   #AboutWE #Dynamic-frame-2-m {
     display: block;
   }
-  .Dynamic-frame-2 {
-    position: absolute;
-    top: -3%;
-    left: 50%;
-    width: 717px;
-    height: 1289px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    z-index: -1;
+  #AboutWE #Dynamic-frame-2-w {
     display: none;
-  }
-  #AboutWE .about-mission .lower .line-deco {
-    display: block;
   }
   #AboutWE .about-mission .about-h2 {
     margin-bottom: 2rem;
   }
   #AboutWE .about-mission .about-h4 {
     margin-top: 2rem;
+  }
+  #AboutWE .about-mission .line-deco-vertical {
+    position: absolute;
+    top: -47%;
+    -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+    left: 50%;
+    display: block;
+  }
+  #AboutWE .about-mission .lower .line-deco {
+    display: block;
   }
   #AboutWE #Dynamic-frame-2-outer-m {
     position: absolute;
@@ -8401,25 +8357,18 @@ select.form-control::-ms-expand {
     z-index: -1;
     display: block;
   }
-  #AboutWE .about-mission .line-deco-vertical {
-    position: absolute;
-    top: -47%;
-    -webkit-transform: scaleY(-1);
-            transform: scaleY(-1);
-    left: 50%;
-    display: block;
+  #AboutWE .about-cert {
+    padding-top: 12rem;
+    margin-top: 8rem;
   }
   #AboutWE .about-cert .cert-diamond {
     width: 541px;
     height: 962px;
   }
-  #AboutWE .about-cert .cert-diamond-stroke-2, #AboutWE .about-cert .cert-diamond-stroke {
+  #AboutWE .about-cert .cert-diamond-stroke-2,
+  #AboutWE .about-cert .cert-diamond-stroke {
     width: 357px;
     height: 635px;
-  }
-  #AboutWE .about-cert {
-    padding-top: 12rem;
-    margin-top: 8rem;
   }
   #AboutWE .about-slogan .line-deco {
     display: block;
@@ -8427,6 +8376,23 @@ select.form-control::-ms-expand {
   }
   #AboutWE .about-main .about-h2 {
     padding-bottom: 2rem;
+  }
+  #AboutWE .about-brandStory,
+  #AboutWE .about-mission,
+  #AboutWE .about-slogan {
+    border: none;
+    margin-top: 8rem;
+  }
+  .Dynamic-frame-2 {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    width: 717px;
+    height: 1289px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: -1;
+    display: none;
   }
   #AboutWE .about-brandStory::after,
   #AboutWE .about-slogan::after {
@@ -8438,6 +8404,9 @@ select.form-control::-ms-expand {
   #AboutWE .about-main {
     margin-top: 5rem;
     padding-bottom: 0rem;
+  }
+  #AboutWE .about-h2 {
+    font-size: 36px;
   }
   #AboutWE .about-p {
     font-size: 20px;
@@ -8464,25 +8433,35 @@ select.form-control::-ms-expand {
   #AboutWE .about-brandStory .line-deco-vertical {
     bottom: 111px;
   }
-  #AboutWE .about-h2 {
-    font-size: 36px;
-  }
   #AboutWE .about-mission {
     padding-top: 13rem;
     margin-bottom: 9rem;
+  }
+  #AboutWE .about-mission .line-deco-vertical {
+    top: -68%;
+    left: 50%;
   }
   #AboutWE .about-mission .about-h2 {
     padding-left: 0rem;
     line-height: 48px;
     padding-top: 0;
   }
+  #AboutWE .about-mission .about-h4 {
+    margin-top: 7rem;
+  }
   #AboutWE .about-mission .lower {
     padding: 0;
     margin-top: -36px;
   }
+  #AboutWE .about-mission .lower .about-p {
+    padding: 0;
+    font-size: 16px;
+  }
   #AboutWE .about-mission #upper-frame {
     position: absolute;
-    top: -49%;
+    top: -39%;
+    -webkit-transform: scaleY(1.15);
+            transform: scaleY(1.15);
     right: 3%;
     width: 844px;
     height: 291px;
@@ -8502,44 +8481,6 @@ select.form-control::-ms-expand {
   #AboutWE .about-top-deco-2 {
     display: none;
   }
-  #AboutWE .Dynamic-frame {
-    width: 911px;
-    height: 531px;
-  }
-  #AboutWE .hero-header-bkg {
-    height: 800px;
-  }
-  #brandstory-about {
-    padding-top: 2rem;
-  }
-  #AboutWE .lower .about-p {
-    padding: 0;
-    font-size: 16px;
-  }
-  #AboutWE #Dynamic-frame-2-m {
-    display: none;
-  }
-  #AboutWE #Dynamic-frame-2-w {
-    display: block;
-  }
-  #AboutWE .Dynamic-frame-2 {
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    width: 939px;
-    height: 597px;
-    -webkit-transform: translateX(-50%) scaleY(1.2);
-            transform: translateX(-50%) scaleY(1.2);
-    z-index: -1;
-    display: none;
-  }
-  #AboutWE #Dynamic-frame-2-outer-m {
-    display: none;
-  }
-  #AboutWE .about-mission .line-deco-vertical {
-    top: -68%;
-    left: 50%;
-  }
   #AboutWE .about-cert {
     height: 900px;
     margin-top: 10rem;
@@ -8557,6 +8498,34 @@ select.form-control::-ms-expand {
     width: 351px;
     height: 635px;
   }
+  #AboutWE .about-slogan .line-deco {
+    padding-bottom: 19px;
+  }
+  #AboutWE .Dynamic-frame {
+    width: 911px;
+    height: 531px;
+  }
+  #AboutWE .hero-header-bkg {
+    height: 800px;
+  }
+  #AboutWE #Dynamic-frame-2-outer-m,
+  #AboutWE #Dynamic-frame-2-m {
+    display: none;
+  }
+  #AboutWE #Dynamic-frame-2-w {
+    display: block;
+  }
+  #AboutWE .Dynamic-frame-2 {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    width: 939px;
+    height: 597px;
+    -webkit-transform: translateX(-50%) scaleY(1.2);
+            transform: translateX(-50%) scaleY(1.2);
+    z-index: -1;
+    display: none;
+  }
   #AboutWE .Dynamic-frame {
     display: block;
     top: 19%;
@@ -8568,6 +8537,13 @@ select.form-control::-ms-expand {
     width: 965px;
     height: 588px;
     display: block;
+  }
+  #AboutWE #about-top-deco-lg {
+    display: block;
+    padding-top: 5rem;
+  }
+  #brandstory-about {
+    padding-top: 2rem;
   }
   #AboutWE .about-brandStory,
   #AboutWE .about-mission,
@@ -8581,21 +8557,6 @@ select.form-control::-ms-expand {
   #AboutWE #Dynamic-frame-outer-w,
   #AboutWE #Dynamic-frame-w {
     display: block;
-  }
-  #AboutWE #about-top-deco-lg {
-    display: block;
-    padding-top: 5rem;
-  }
-  #AboutWE .about-slogan .line-deco {
-    padding-bottom: 19px;
-  }
-  #AboutWE .about-mission .about-h4 {
-    margin-top: 7rem;
-  }
-  #AboutWE .about-mission #upper-frame {
-    top: -39%;
-    -webkit-transform: scaleY(1.15);
-            transform: scaleY(1.15);
   }
 }
 
@@ -8613,18 +8574,18 @@ select.form-control::-ms-expand {
 }
 
 @media (max-width: 575px) {
-  #AboutWE .about-mission .lower .about-p {
-    font-size: 16px;
-    padding-top: 0rem;
+  #AboutWE .about-h4 {
+    font-size: 20px;
+    padding: 1rem;
+    line-height: inherit;
   }
   #AboutWE .about-mission .lower {
     max-width: 293px;
     margin: 0 auto;
   }
-  #AboutWE .about-h4 {
-    font-size: 20px;
-    padding: 1rem;
-    line-height: inherit;
+  #AboutWE .about-mission .lower .about-p {
+    font-size: 16px;
+    padding-top: 0rem;
   }
 }
 

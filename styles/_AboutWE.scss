@@ -324,9 +324,9 @@
     #AboutWE .about-main {
         padding-top: 17rem;
         padding-bottom: 15rem;
-    }
-    #AboutWE .about-main .about-h2{
-        padding-bottom: 3rem;
+        .about-h2{
+            padding-bottom: 3rem;
+        }
     }
 }
 // Medium devices (tablets, 768px and up)
@@ -335,13 +335,6 @@
     #AboutWE .about-top-deco-2{
         width: 100%;
         max-width: 900px;
-    }
-    #AboutWE .line-deco {
-        padding-top: 1rem;
-        display: none;
-    }
-    #AboutWE .hero-header-bkg {
-        height: 500px;
     }
     #AboutWE {
         #about-top-deco-m,
@@ -356,51 +349,104 @@
         #Dynamic-frame-outer-m{
             display: block;
         }
-    }
-    #AboutWE .about-brandStory .about-p {
-        padding: 13px 3rem;
-    }
-    #AboutWE .about-p {
-        font-size: 22px;
-    }
-    #AboutWE .Dynamic-frame{
-        width: 735px;
-        height: 764px;
-        display: block;
-    }
-    #AboutWE #Dynamic-frame-outer{
-        width: 735px;
-        height: 764px;
-        display: block;
-    }
-    #AboutWE .about-brandStory .about-p {
-        max-width: 600px;
-    }
-    #AboutWE .about-h2{
-        font-size: 36px;
-    }
-    #AboutWE .about-brandStory{
-        border-bottom: none;
+        .about-h2{
+            font-size: 36px;
+        }
+        .about-p {
+            font-size: 22px;
+        }
+        .Dynamic-frame{
+            width: 735px;
+            height: 764px;
+            display: block;
+        }
+        #Dynamic-frame-outer{
+            width: 735px;
+            height: 764px;
+            display: block;
+        }
+        .about-brandStory{
+            border-bottom: none;
+            .about-p {
+                max-width: 600px;
+                padding: 13px 3rem;
+            }
+            .line-deco-vertical{
+                display: block;
+                bottom: -14%;
+                margin: 0 auto;
+            }
+        }
+        .hero-header-bkg {
+            height: 500px;
+        }
+        .line-deco {
+            padding-top: 1rem;
+            display: none;
+        }
+        .about-cert .about-cert-icon {
+            margin: 20px 30px;
+        }
+        #Dynamic-frame-2-m{
+            display: block;
+        }
+        #Dynamic-frame-2-w{
+            display: none;
+        }
+        .about-mission {
+            .about-h2{
+                margin-bottom: 2rem;
+            }
+            .about-h4{
+                margin-top: 2rem;
+            }
+            .line-deco-vertical{
+                position: absolute;
+                top: -47%;
+                transform: scaleY(-1);
+                left: 50%;
+                display: block;
+            }
+            .lower .line-deco{
+                display: block;
+            }
+        }
+        #Dynamic-frame-2-outer-m{
+            position: absolute;
+            top: -5%;
+            left: 50%;
+            width: 735px;
+            height: 1311px;
+            transform: translateX(-50%) scaleY(1.15);
+            z-index: -1;
+            display: block;
+        }
+        .about-cert {
+            padding-top: 12rem;
+            margin-top: 8rem;
+            .cert-diamond {
+                width: 541px;
+                height: 962px;
+            }
+            .cert-diamond-stroke-2,
+            .cert-diamond-stroke {
+                width: 357px;
+                height: 635px;
+            }
+        }
+        .about-slogan .line-deco{
+            display: block;
+            padding-top: 0;
+        }
+        .about-main .about-h2 {
+            padding-bottom: 2rem;
+        }
     }
     #AboutWE .about-brandStory,
     #AboutWE .about-mission,
     #AboutWE .about-slogan{
         border: none;
         margin-top: 8rem;
-    }
-    #AboutWE .about-cert .about-cert-icon {
-        margin: 20px 30px;
-    }
-    #AboutWE .about-brandStory .line-deco-vertical{
-        display: block;
-        bottom: -14%;
-        margin: 0 auto;
-    }
-    #AboutWE #Dynamic-frame-2-w{
-        display: none;
-    }
-    #AboutWE #Dynamic-frame-2-m{
-        display: block;
     }
     .Dynamic-frame-2 {
         position: absolute;
@@ -411,51 +457,6 @@
         transform: translateX(-50%);
         z-index: -1;
         display: none;
-    }
-    #AboutWE  .about-mission .lower .line-deco{
-        display: block;
-    }
-    #AboutWE  .about-mission .about-h2{
-        margin-bottom: 2rem;
-    }
-    #AboutWE  .about-mission .about-h4{
-        margin-top: 2rem;
-    }
-    #AboutWE #Dynamic-frame-2-outer-m{
-        position: absolute;
-        top: -5%;
-        left: 50%;
-        width: 735px;
-        height: 1311px;
-        transform: translateX(-50%) scaleY(1.15);
-        z-index: -1;
-        display: block;
-    }
-    #AboutWE .about-mission .line-deco-vertical{
-        position: absolute;
-        top: -47%;
-        transform: scaleY(-1);
-        left: 50%;
-        display: block;
-    }
-    #AboutWE .about-cert .cert-diamond {
-        width: 541px;
-        height: 962px;
-    }
-    #AboutWE .about-cert .cert-diamond-stroke-2, #AboutWE .about-cert .cert-diamond-stroke {
-        width: 357px;
-        height: 635px;
-    }
-    #AboutWE .about-cert {
-        padding-top: 12rem;
-        margin-top: 8rem;
-    }
-    #AboutWE .about-slogan .line-deco{
-        display: block;
-        padding-top: 0;
-    }
-    #AboutWE .about-main .about-h2 {
-        padding-bottom: 2rem;
     }
     #AboutWE .about-brandStory,
     #AboutWE .about-slogan{
@@ -470,6 +471,9 @@
         .about-main{
             margin-top: 5rem;
             padding-bottom: 0rem;
+        }
+        .about-h2{
+            font-size: 36px;
         }
         .about-p {
             font-size: 20px;
@@ -496,24 +500,33 @@
                 bottom: 111px;
             }
         }
-        .about-h2{
-            font-size: 36px;
-        }
         .about-mission {
             padding-top: 13rem;  
             margin-bottom: 9rem;
+            .line-deco-vertical{
+                top: -68%;
+                left: 50%;
+            }
             .about-h2 {
                 padding-left: 0rem;
                 line-height: 48px;
                 padding-top: 0;
             }
+            .about-h4 {
+                margin-top: 7rem;
+            }
             .lower{
                 padding: 0;
                 margin-top: -36px;
+                .about-p {
+                    padding:0;
+                    font-size: 16px;
+                }
             }
             #upper-frame {
                 position: absolute;
-                top: -49%;
+                top: -39%;
+                transform: scaleY(1.15);
                 right: 3%;
                 width: 844px;
                 height: 291px;
@@ -534,6 +547,26 @@
         .about-top-deco-2 {
             display: none;
         }
+        .about-cert{
+            height: 900px;
+            margin-top: 10rem;
+            padding-top: 14rem;
+            .cert-diamond {
+                width: 542px;
+                height: 962px;
+            }
+            .about-bottom-deco {
+                margin-top: 7rem;
+            }
+            .cert-diamond-stroke-2,
+            .cert-diamond-stroke {
+                width: 351px;
+                height: 635px;
+            }
+        }
+        .about-slogan .line-deco {
+            padding-bottom: 19px;
+        }
         .Dynamic-frame{
             width: 911px;
             height: 531px;
@@ -541,65 +574,42 @@
         .hero-header-bkg {
             height: 800px;
         }
+        #Dynamic-frame-2-outer-m,
+        #Dynamic-frame-2-m{
+            display: none;
+        }
+        #Dynamic-frame-2-w{
+            display: block;
+        }
+        .Dynamic-frame-2 {
+            position: absolute;
+            top: 23%;
+            left: 50%;
+            width: 939px;
+            height: 597px;
+            transform: translateX(-50%) scaleY(1.2);
+            z-index: -1;
+            display: none;
+        }
+        .Dynamic-frame{
+            display: block;
+            top: 19%;
+            width: 943px;
+            height: 553px;
+        }
+        #Dynamic-frame-outer {
+            top: 16%;
+            width: 965px;
+            height: 588px;
+            display: block;
+        }
+        #about-top-deco-lg{
+            display: block;
+            padding-top: 5rem;
+        }
     }
     #brandstory-about{
         padding-top: 2rem;
-    }
-    #AboutWE .lower .about-p {
-        padding:0;
-        font-size: 16px;
-    }
-    #AboutWE #Dynamic-frame-2-m{
-        display: none;
-    }
-    #AboutWE #Dynamic-frame-2-w{
-        display: block;
-    }
-    #AboutWE .Dynamic-frame-2 {
-        position: absolute;
-        top: 23%;
-        left: 50%;
-        width: 939px;
-        height: 597px;
-        transform: translateX(-50%) scaleY(1.2);
-        z-index: -1;
-        display: none;
-    }
-    #AboutWE #Dynamic-frame-2-outer-m{
-        display: none;
-    }
-    #AboutWE .about-mission .line-deco-vertical{
-        top: -68%;
-        left: 50%;
-    }
-    #AboutWE .about-cert{
-        height: 900px;
-        margin-top: 10rem;
-        padding-top: 14rem;
-        .cert-diamond {
-            width: 542px;
-            height: 962px;
-        }
-        .about-bottom-deco {
-            margin-top: 7rem;
-        }
-        .cert-diamond-stroke-2,
-        .cert-diamond-stroke {
-            width: 351px;
-            height: 635px;
-        }
-    }
-    #AboutWE .Dynamic-frame{
-        display: block;
-        top: 19%;
-        width: 943px;
-        height: 553px;
-    }
-    #AboutWE #Dynamic-frame-outer {
-        top: 16%;
-        width: 965px;
-        height: 588px;
-        display: block;
     }
     #AboutWE .about-brandStory,
     #AboutWE .about-mission, 
@@ -613,22 +623,6 @@
     #AboutWE #Dynamic-frame-outer-w,
     #AboutWE #Dynamic-frame-w{
         display: block;
-    }
-    #AboutWE #about-top-deco-lg{
-        display: block;
-        padding-top: 5rem;
-    }
-    #AboutWE .about-slogan .line-deco {
-        padding-bottom: 19px;
-    }
-    #AboutWE .about-mission {
-        .about-h4 {
-            margin-top: 7rem;
-        }
-        #upper-frame {
-            top: -39%;
-            transform: scaleY(1.15);
-        }
     }
  }
 // Extra large devices (large desktops, 1200px and up)
@@ -646,17 +640,19 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
-    #AboutWE .about-mission .lower .about-p {
-        font-size: 16px;
-        padding-top: 0rem;
-    }
-    #AboutWE .about-mission .lower  {
-        max-width: 293px;
-        margin: 0 auto;
-    }
-    #AboutWE .about-h4 {
-        font-size: 20px;
-        padding: 1rem;
-        line-height: inherit;
+    #AboutWE {
+        .about-h4 {
+            font-size: 20px;
+            padding: 1rem;
+            line-height: inherit;
+        }
+        .about-mission .lower  {
+            max-width: 293px;
+            margin: 0 auto;
+            .about-p {
+                font-size: 16px;
+                padding-top: 0rem;
+            }
+        }
     }
 }

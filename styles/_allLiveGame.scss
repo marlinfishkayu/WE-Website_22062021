@@ -340,34 +340,36 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #allLiveGame  .hero-intro2{ 
-        font-size: 20px;
-        max-width: 712px;
-        margin: 0 auto;
-        line-height: inherit;
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-    }
-    #allLiveGame .allLiveGame-main .game-item-wrap {
-        position: relative;
-        margin-top: 2rem;
-        margin-bottom: 10rem;
-    }
-    #allLiveGame .allLiveGame-main .game-item-wrap .game-item-text {
-        bottom: 0%;
-    }
-    #allLiveGame .allLiveGame-main .hero-intro2{
-        padding-bottom: 20px;
-        font-weight: 300;
-    }
-    #allLiveGame .allLiveGame-main {
-        padding: 7rem 2rem;
+    #allLiveGame  {
+        .allLiveGame-main {
+            padding: 7rem 2rem;
+            .hero-intro2{
+                padding-bottom: 20px;
+                font-weight: 300;
+            }
+            .game-item-wrap {
+                position: relative;
+                margin-top: 2rem;
+                margin-bottom: 10rem;
+                .game-item-text {
+                    bottom: 0%;
+                }
+            }
+        }
+        .hero-intro2{ 
+            font-size: 20px;
+            max-width: 712px;
+            margin: 0 auto;
+            line-height: inherit;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+        .bottom-deco {
+            width: 294px;
+        }
     }
     #allLiveGame.AllLottery .bottom-deco {
         width: 320px;
-    }
-    .allLiveGame-main .bottom-deco {
-        width: 294px;
     }
 }
 // Large devices (desktops, 992px and up)
